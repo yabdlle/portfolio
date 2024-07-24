@@ -5,7 +5,7 @@ function toggleMenu() {
     menuLinks.classList.toggle('open');
     hamburgerIcon.classList.toggle('open');
 }
-var messageArr = ["UMN Student", "Software Engineer", "Frontend Developer", "Backend Developer", "Data Scientist", "Machine Learning Engineer"];
+var messageArr = ["UMN Student", "Software Engineer", "Frontend Developer"];
 var currentMessage = 0;
 var textPosition = 0;
 var typingSpeed = 100;
