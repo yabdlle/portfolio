@@ -352,20 +352,62 @@ section {
 .section-title{
   margin-top: 40px;
   color: #0080FF;
+  font-size: 2rem;
   text-align: center;
-  text-decoration: underline;
 }
-
 
 
 .about-div{
   text-align: center;
+  font-size: 1.5rem;
 }
+
+.card {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #ffffff; /* White background for the card */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  padding: 24px; /* Increased padding for more space */
+  max-width: 800px; /* Maximum width of the card */
+  margin: 20px auto; /* Center the card horizontally with margin */
+  text-align: center; /* Center the text inside the card */
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Smooth transition for hover effects */
+  border: 1px solid #e0e0e0; /* Subtle border to define card edges */
+}
+
+.card:hover {
+  transform: translateY(-8px); /* Lift the card slightly on hover */
+}
+
+.card-header {
+  font-size: 1.25rem; /* Slightly larger font for the header */
+  color: #333333; /* Darker text color for better readability */
+  margin-bottom: 16px; /* Space below the header */
+}
+
+.card-content {
+  font-size: 1rem; /* Standard font size for content */
+  color: white; /* Lighter text color for content */
+}
+
+.card-footer {
+  margin-top: 20px; /* Space above the footer */
+}
+
+.card-footer a {
+  color: #007BFF; /* Link color */
+  text-decoration: none; /* Remove underline */ /* Bold link text */
+}
+
 
 /* Skills */
 .skills-title{
-  text-decoration: underline;
+  margin-top: 40px;
+  color: #0080FF;
+  font-size: 2rem;
   text-align: center;
-  color: #2fcff4;
 }
 
