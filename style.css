@@ -419,15 +419,18 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
+  padding: 1.5rem; /* Increased padding for better spacing */
   border-radius: 0.5rem;
   box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #fff; /* White background for clarity */
 }
 
 .skills-data:hover {
+  color: #0080FF;
   transform: translateY(-5px);
   box-shadow: 0 8px 30px rgba(14, 36, 49, 0.2);
+  background: #f0f8ff; /* Light blue background on hover */
 }
 
 /* Skill Icons */
@@ -435,7 +438,7 @@ section {
   width: 3rem; /* Larger icons for better visibility */
   font-size: 3rem;
   margin-bottom: 0.5rem;
-  color: var(--first-color);
+  color: #0080FF; /* Blue color for icons */
 }
 
 /* Skill Names */
@@ -447,11 +450,16 @@ section {
 
 .skills-name {
   font-size: 1rem;
-  color: var(--primary-color);
+  color: #0080FF; /* Blue color for text */
+  font-weight: bold; /* Bold text for emphasis */
 }
 
 /* Hover Effect */
-.skills-names:hover .skills-icon {
+.skills-data:hover .skills-icon {
   transform: scale(1.2);
   transition: transform 0.3s ease;
+}
+
+.skills-data:hover .skills-name {
+  color: #0056b3; /* Darker blue for text on hover */
 }
