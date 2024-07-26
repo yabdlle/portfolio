@@ -147,7 +147,7 @@ a:hover {
   align-items: center;
   position: fixed;
   top: 50%; /* Center vertically */
-  right: 20px;
+  left: 20px;
   transform: translateY(-40%);
   z-index: 10;
   margin-bottom: 20px; /* Ensure space below the nav */
@@ -345,7 +345,7 @@ section {
 .btn-color-2:hover {
   background: rgb(0, 0, 0); /* Darker color on hover to match button 1 */
   border: gray 0.1rem solid;
-  color: #0080FF;
+   color: #0080FF;
   transform: translateY(-5px); /* Maintain border color on hover */
 }
 
