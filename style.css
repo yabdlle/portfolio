@@ -83,6 +83,7 @@ a:hover {
   
   #hamburger-nav {
     display: flex;
+    align-items: center;
     color: white;
   }
   
@@ -91,10 +92,21 @@ a:hover {
     align-items: center;
     justify-content: center;
   }
-  
-  .section__pic-container {
-    max-width: 100%;
-    height: auto;
+  .socials-container {
+    display: flex; /* Show social icons */
+    flex-direction: column; /* Stack icons vertically */
+    align-items: center; /* Center icons horizontally */
+    margin-top: 1rem; /* Space between menu and social icons */
+  }
+
+  /* Additional styling if needed for social icons */
+  .social-icon {
+    margin: 0.5rem 0; /* Space between social icons */
+  }
+
+  .social-icon i {
+    color: #ffffff; /* Ensure the icons are white */
+    cursor: pointer;
   }
 }
 
@@ -258,6 +270,7 @@ section {
   border-radius: 50%; /* Make the image a circle */
   object-fit: cover; /* Ensure the image covers the entire area */
   cursor: pointer;
+  overflow: hidden;
   max-width: 375px; /* Limit the maximum size */
   border: 3px solid white; /* Color and size of border */
   margin-bottom: 100px; /* Space between the image and other elements */
