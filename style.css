@@ -296,6 +296,7 @@ section {
   transform: translateY(-5px); /* Maintain border color on hover */
 }
 
+/* About */
 .section-title{
   text-align: center;
   text-decoration: underline;
@@ -305,6 +306,7 @@ section {
   text-align: center;
 }
 
+/* Skills */
 .skills-title{
   text-decoration: underline;
   text-align: center;

@@ -39,24 +39,3 @@ function backspace() {
 window.onload = function() {
   typewriter();
 };
-
-document.getElementById('copy').addEventListener('click', function() {
-  // Get the email address
-  const email = document.getElementById('email').innerText;
-
-  // Create a temporary textarea element to copy the email address
-  const textarea = document.createElement('textarea');
-  textarea.value = email;
-  document.body.appendChild(textarea);
-  textarea.select();
-  document.execCommand('copy');
-  document.body.removeChild(textarea);
-
-  // Show a confirmation message
-  const copiedMessage = document.getElementById('copied');
-  copiedMessage.classList.add('active');
-  
-  setTimeout(() => {
-    copiedMessage.classList.remove('active');
-  }, 2000);
-});
