@@ -9,7 +9,7 @@ function toggleMenu() {
 
 
 const colors = ["#ff5733", "#33D8FF", "#9733FF"]; // Array of colors
-const messageArr = ["UMN Student", "Software Engineer", "Fullstack Developer"];
+const messageArr = ["UMN Student", "Software Engineer", "Frontend Developer"];
 
 var currentMessage = 0;
 var textPosition = 0;
