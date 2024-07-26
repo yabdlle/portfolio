@@ -398,6 +398,7 @@ section {
 }
 
 /* Skills Section */
+/* Skills Section */
 .skills-section {
   padding: 20px;
 }
@@ -420,7 +421,8 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 10px;
+  width: 150px; /* Fixed width */
+  height: 150px; /* Fixed height to ensure all cards are the same size */
 }
 
 .skill-card:hover {
@@ -438,3 +440,4 @@ section {
   font-size: 1.2rem;
   color: #333;
 }
+
