@@ -36,4 +36,8 @@
     .btn-container {
       flex-wrap: wrap;
     }
+    .skills-container {
+      grid-template-columns: repeat(2, 1fr);
+      text-align: initial;
+    }
   }
