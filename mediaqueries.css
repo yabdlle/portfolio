@@ -14,11 +14,12 @@
       align-items: center;
       justify-content: center;
     }
+    
     .socials-container {
       display: flex; /* Show social icons */
       flex-direction: column; /* Stack icons vertically */
       align-items: center; /* Center icons horizontally */
-      margin-top: 1rem; /* Space between menu and social icons */
+      margin-top: 0.5rem; /* Space between menu and social icons */
     }
   
     /* Additional styling if needed for social icons */
