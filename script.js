@@ -54,8 +54,9 @@ document.getElementById('copy').addEventListener('click', function() {
 
   // Show a confirmation message
   const copiedMessage = document.getElementById('copied');
-  copiedMessage.innerText = 'Copied!';
+  copiedMessage.classList.add('active');
+  
   setTimeout(() => {
-      copiedMessage.innerText = '';
+    copiedMessage.classList.remove('active');
   }, 2000);
 });
