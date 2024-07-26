@@ -145,6 +145,7 @@ a:hover {
   flex-direction: column;
   align-items: center;
   position: fixed;
+  margin-bottom: 10px;
   top: 50%;
   right: 20px;
   transform: translateY(-50%);
@@ -156,7 +157,7 @@ a:hover {
   width: 20px;
   height: 20px;
   margin-bottom: 10px;
-  background-color: #ccc; /* Light grey color, change as needed */
+  background-color: #ccc; /* Light grey color*/
   border-radius: 50%;
   transition: background-color 0.3s;
   outline: none;
