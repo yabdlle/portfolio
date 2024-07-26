@@ -240,17 +240,31 @@ section {
   position: relative;
 }
 
-#socials-container {
-  position: fixed;               /* Fixes the position relative to the viewport */
-  top: 50%;                      /* Center vertically in the viewport */
-  left: 10px;                    /* Distance from the left edge of the viewport */
-  transform: translateY(-50%);  /* Adjust to exactly center vertically */
+.main_grid {
   display: flex;
-  flex-direction: column;        /* Stack icons vertically */
-  gap: 15px;                     /* Space between icons */
+  flex-direction: column;   /* Stack photo and icons vertically */
+  align-items: center;      /* Center items horizontally */
+  text-align: center;       /* Center text (if needed) */
 }
 
-.icon, .fa-brands.fa-github.fa-lg, .fa-brands.fa-linkedin.fa-lg {
+.main_img {
+  display: flex;
+  justify-content: center;  /* Center the photo horizontally */
+}
+
+.main_img img {
+  max-width: 100%;  /* Ensure the photo does not exceed container width */
+  height: auto;     /* Maintain aspect ratio */
+}
+
+#socials-container {
+  display: flex;
+  flex-direction: row;           /* Arrange icons in a row */
+  justify-content: center;       /* Center icons horizontally within the container */
+  align-items: center;          /* Center icons vertically within the container */           /* Space between icons */             /* Space between the photo and the icons */
+}
+
+.social-icon i {
   cursor: pointer;
   height: 3rem;                  /* Size of the icons */
   width: 3rem;                   /* Size of the icons */
@@ -259,38 +273,10 @@ section {
   transition: transform 0.3s, color 0.3s; /* Smooth hover effects */
 }
 
-/* Adjust margin for GitHub icon */
-.fa-brands.fa-github.fa-lg {
-  height: 2rem;                  /* Adjust height of the GitHub icon */
-  width: 2rem;                   /* Adjust width to maintain circular shape */
-  margin-top: 50px;            /* Remove gap below the GitHub icon */
-}
-
-/* Adjust margin for LinkedIn icon */
-.fa-brands.fa-linkedin.fa-lg {
-  height: 2rem;       /* Ensure LinkedIn icon has the same height */
-  width: 2rem;        /* Ensure LinkedIn icon has the same width */
-  margin-bottom: 18px;   /* Adjusted margin to move the LinkedIn icon up */
-}
-
-.icon:hover, .fa-brands.fa-github.fa-lg:hover, .fa-brands.fa-linkedin.fa-lg:hover {
+.social-icon i:hover {
   transform: scale(1.1);         /* Slightly enlarge on hover */
 }
 
-.fa-brands.fa-linkedin.fa-lg:hover {
-  color: #0077b5;                /* LinkedIn hover color */
-}
-
-.fa-brands.fa-github.fa-lg:hover {
-  color: #333;                   /* GitHub hover color */
-}
-
-/* Main Grid and Image */
-.main_grid {
-  display: flex;
-  justify-content: center; /* Horizontally center */
-  align-items: center; /* Vertically center */
-}
 
 .main_img img {
   margin-top: 50px; /* Increase the top margin for more space */
