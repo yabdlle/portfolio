@@ -76,39 +76,6 @@ a:hover {
   transition: color 0.3s ease-in-out; /* Optional: smooth transition for color change */
 }
 
-@media screen and (max-width: 600px) {
-  #desktop-nav {
-    display: none;
-  }
-  
-  #hamburger-nav {
-    display: flex;
-    align-items: center;
-    color: white;
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .socials-container {
-    display: flex; /* Show social icons */
-    flex-direction: column; /* Stack icons vertically */
-    align-items: center; /* Center icons horizontally */
-    margin-top: 1rem; /* Space between menu and social icons */
-  }
-
-  /* Additional styling if needed for social icons */
-  .social-icon {
-    margin: 0.5rem 0; /* Space between social icons */
-  }
-
-  .social-icon i {
-    color: #ffffff; /* Ensure the icons are white */
-    cursor: pointer;
-  }
-}
 
 .hamburger-icon {
   color: white;
@@ -331,26 +298,11 @@ section {
 
 .section-title{
   text-align: center;
+  text-decoration: underline;
 }
 
-section.about {
-  padding: 20vh 15px;
-  padding-top: 10vh; /* Adjusted from 20vh to 10vh to reduce space */
-
-}
-.about-container {
-  row-gap: 2rem;
+.about-div{
   text-align: center;
 }
-.about-subtitle {
-  margin-bottom: var(--mb-2);
-}
-.about-img {
-  justify-self: center;
-}
-.about-img img {
-  width: 200px;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  transition: transform 1s ease; /* Apply the transition to the image itself */
-}
+
+

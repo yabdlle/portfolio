@@ -1,0 +1,38 @@
+@media screen and (max-width: 600px) {
+    #desktop-nav {
+      display: none;
+    }
+    
+    #hamburger-nav {
+      display: flex;
+      align-items: center;
+      color: white;
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .socials-container {
+      display: flex; /* Show social icons */
+      flex-direction: column; /* Stack icons vertically */
+      align-items: center; /* Center icons horizontally */
+      margin-top: 1rem; /* Space between menu and social icons */
+    }
+  
+    /* Additional styling if needed for social icons */
+    .social-icon {
+      margin: 0.5rem 0; /* Space between social icons */
+    }
+  
+    .social-icon i {
+      color: #ffffff; /* Ensure the icons are white */
+      cursor: pointer;
+    }
+    .about-containers,
+    .contact-info-upper-container,
+    .btn-container {
+      flex-wrap: wrap;
+    }
+  }
