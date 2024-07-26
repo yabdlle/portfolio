@@ -270,7 +270,7 @@ section {
 .fa-brands.fa-linkedin.fa-lg {
   height: 2rem;       /* Ensure LinkedIn icon has the same height */
   width: 2rem;        /* Ensure LinkedIn icon has the same width */
-  margin-top: 20px;   /* Adjusted margin to move the LinkedIn icon up */
+  margin-top: 30px;   /* Adjusted margin to move the LinkedIn icon up */
 }
 
 .icon:hover, .fa-brands.fa-github.fa-lg:hover, .fa-brands.fa-linkedin.fa-lg:hover {
