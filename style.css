@@ -261,6 +261,7 @@ section {
 
 /* Adjust margin for GitHub icon */
 .fa-brands.fa-github.fa-lg {
+  margin-top: 20px;
   height: 2rem;                  /* Adjust height of the GitHub icon */
   width: 2rem;                   /* Adjust width to maintain circular shape */
   margin-bottom: 0;             /* Remove gap below the GitHub icon */
