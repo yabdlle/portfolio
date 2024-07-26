@@ -263,14 +263,14 @@ section {
 .fa-brands.fa-github.fa-lg {
   height: 2rem;                  /* Adjust height of the GitHub icon */
   width: 2rem;                   /* Adjust width to maintain circular shape */
-  margin-top: 45px;            /* Remove gap below the GitHub icon */
+  margin-top: 50px;            /* Remove gap below the GitHub icon */
 }
 
 /* Adjust margin for LinkedIn icon */
 .fa-brands.fa-linkedin.fa-lg {
   height: 2rem;       /* Ensure LinkedIn icon has the same height */
   width: 2rem;        /* Ensure LinkedIn icon has the same width */
-  margin-top: 30px;   /* Adjusted margin to move the LinkedIn icon up */
+  margin-bottom: 18px;   /* Adjusted margin to move the LinkedIn icon up */
 }
 
 .icon:hover, .fa-brands.fa-github.fa-lg:hover, .fa-brands.fa-linkedin.fa-lg:hover {
