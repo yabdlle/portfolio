@@ -368,9 +368,8 @@ section {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-color: white;
+  background-color:#0A0A0A;
   border-radius: 12px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   padding: 20px;
   max-width: 800px;
   margin: 20px auto;
