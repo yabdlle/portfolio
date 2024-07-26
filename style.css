@@ -269,7 +269,8 @@ section {
 .social-icon i {
   cursor: pointer;
   font-size: 4rem; 
-  margin-bottom: 50px;               /* Increase icon size */
+  margin-bottom: 50px;
+  border-radius: 50%;               /* Increase icon size */
   color: #ffffff;                /* Icon color */
   transition: transform 0.3s, color 0.3s; /* Smooth hover effects */
 }

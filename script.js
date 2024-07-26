@@ -1,11 +1,16 @@
+// Define colors and messages
 function toggleMenu() {
-    const menuLinks = document.querySelector('.menu-links');
-    const hamburgerIcon = document.querySelector('.hamburger-icon');
+  const menuLinks = document.querySelector('.menu-links');
+  const hamburgerIcon = document.querySelector('.hamburger-icon');
 
-    menuLinks.classList.toggle('open');
-    hamburgerIcon.classList.toggle('open');
+  menuLinks.classList.toggle('open');
+  hamburgerIcon.classList.toggle('open');
 }
-var messageArr = ["UMN Student", "Software Engineer", "Fullstack Developer"];
+
+
+const colors = ["#ff5733", "#33D8FF", "#9733FF"]; // Array of colors
+const messageArr = ["UMN Student", "Software Engineer", "Fullstack Developer"];
+
 var currentMessage = 0;
 var textPosition = 0;
 var typingSpeed = 100;
@@ -14,8 +19,11 @@ var resumeDelay = 2000;
 
 function typewriter() {
   var element = document.querySelector("#jobTitle");
+
+  // Update text with color
+  element.innerHTML = `<span style="color: ${colors[currentMessage]}">${messageArr[currentMessage].substring(0, textPosition)}</span>`;
+
   if (textPosition < messageArr[currentMessage].length) {
-    element.innerHTML = messageArr[currentMessage].substring(0, textPosition + 1);
     textPosition++;
     setTimeout(typewriter, typingSpeed);
   } else {
@@ -25,8 +33,11 @@ function typewriter() {
 
 function backspace() {
   var element = document.querySelector("#jobTitle");
+
+  // Update text with color
+  element.innerHTML = `<span style="color: ${colors[currentMessage]}">${messageArr[currentMessage].substring(0, textPosition)}</span>`;
+
   if (textPosition > 0) {
-    element.innerHTML = messageArr[currentMessage].substring(0, textPosition - 1);
     textPosition--;
     setTimeout(backspace, backspacingSpeed);
   } else {
@@ -39,3 +50,11 @@ function backspace() {
 window.onload = function() {
   typewriter();
 };
+
+function toggleMenu() {
+    const menuLinks = document.querySelector('.menu-links');
+    const hamburgerIcon = document.querySelector('.hamburger-icon');
+
+    menuLinks.classList.toggle('open');
+    hamburgerIcon.classList.toggle('open');
+}
