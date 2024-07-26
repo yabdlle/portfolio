@@ -251,21 +251,23 @@ section {
   gap: 15px;                     /* Space between icons */
 }
 
-.icon, .fa-brands.fa-github.fa-lg, .fa-brands.fa-linkedin.fa-lg {
+.icon, .fa-brands.fa-linkedin.fa-lg {
   cursor: pointer;
-  height: 3rem;                  /* Size of the icons */
-  width: 3rem;                   /* Size of the icons */
+  height: 3rem;                  /* Size of the LinkedIn icon */
+  width: 3rem;                   /* Size of the LinkedIn icon */
   border-radius: 50%;            /* Circular shape */
-  color: #ffffff;               /* Icon color */
+  color: #ffffff;                /* Icon color */
   transition: transform 0.3s, color 0.3s; /* Smooth hover effects */
 }
 
 .fa-brands.fa-github.fa-lg {
-  margin-bottom: 0; /* Remove gap below the GitHub icon */
+  height: 2rem;                  /* Adjust height of the GitHub icon */
+  width: 2rem;                   /* Adjust width to maintain circular shape */
+  margin-bottom: 0;             /* Remove gap below the GitHub icon */
 }
 
 .fa-brands.fa-linkedin.fa-lg {
-  margin-top: 0; /* Remove gap above the LinkedIn icon */
+  margin-top: 0;                /* Remove gap above the LinkedIn icon */
 }
 
 
