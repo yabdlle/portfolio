@@ -268,10 +268,10 @@ section {
 
 /* Adjust margin for LinkedIn icon */
 .fa-brands.fa-linkedin.fa-lg {
-  margin-top: 28px;
-               
+  height: 2rem;       /* Ensure LinkedIn icon has the same height */
+  width: 2rem;        /* Ensure LinkedIn icon has the same width */
+  margin-top: 20px;   /* Adjusted margin to move the LinkedIn icon up */
 }
-
 
 .icon:hover, .fa-brands.fa-github.fa-lg:hover, .fa-brands.fa-linkedin.fa-lg:hover {
   transform: scale(1.1);         /* Slightly enlarge on hover */
