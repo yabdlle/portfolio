@@ -61,6 +61,7 @@ a:hover {
 
 .logo:hover {
   cursor: default;
+  color: gr;
 }
 
 #hamburger-nav {
@@ -261,20 +262,21 @@ section {
   display: flex;
   flex-direction: row;           /* Arrange icons in a row */
   justify-content: center;       /* Center icons horizontally within the container */
-  align-items: center;          /* Center icons vertically within the container */           /* Space between icons */             /* Space between the photo and the icons */
+  align-items: center;           /* Center icons vertically within the container */
+  gap: 15px;                     /* Space between icons */
 }
 
 .social-icon i {
   cursor: pointer;
-  height: 3rem;                  /* Size of the icons */
-  width: 3rem;                   /* Size of the icons */
-  border-radius: 50%;            /* Circular shape */
+  font-size: 4rem; 
+  margin-bottom: 50px;               /* Increase icon size */
   color: #ffffff;                /* Icon color */
   transition: transform 0.3s, color 0.3s; /* Smooth hover effects */
 }
 
 .social-icon i:hover {
-  transform: scale(1.1);         /* Slightly enlarge on hover */
+  transform: scale(1.1);  
+  color: gray;       /* Slightly enlarge on hover */    
 }
 
 
@@ -346,6 +348,7 @@ section {
 
 /* About */
 .section-title{
+  margin-top: 40px;
   text-align: center;
   text-decoration: underline;
 }
