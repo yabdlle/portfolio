@@ -332,6 +332,7 @@ section {
 
 .btn-color-1:hover {
   background: rgb(0, 0, 0);
+  color: #0080FF;
   transform: translateY(-5px); /* Darker color on hover */
 }
 
@@ -344,6 +345,7 @@ section {
 .btn-color-2:hover {
   background: rgb(0, 0, 0); /* Darker color on hover to match button 1 */
   border: gray 0.1rem solid;
+  color: #0080FF;
   transform: translateY(-5px); /* Maintain border color on hover */
 }
 
