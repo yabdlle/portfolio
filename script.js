@@ -8,7 +8,9 @@ function toggleMenu() {
 }
 
 
-const colors = ["#ff5733", "#33D8FF", "#9733FF"]; // Array of colors
+
+
+const colors = ["#0080FF", "#33D8FF", "#81DAF5"]; // Array of colors
 const messageArr = ["UMN Student", "Software Engineer", "Frontend Developer"];
 
 var currentMessage = 0;
@@ -51,10 +53,3 @@ window.onload = function() {
   typewriter();
 };
 
-function toggleMenu() {
-    const menuLinks = document.querySelector('.menu-links');
-    const hamburgerIcon = document.querySelector('.hamburger-icon');
-
-    menuLinks.classList.toggle('open');
-    hamburgerIcon.classList.toggle('open');
-}
