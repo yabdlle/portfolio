@@ -145,24 +145,23 @@ a:hover {
   flex-direction: column;
   align-items: center;
   position: fixed;
-  margin-bottom: 20px;
-  top: calc(50% - 20px);
+  top: 50%; /* Center vertically */
   right: 20px;
   transform: translateY(-50%);
   z-index: 10;
+  margin-bottom: 20px; /* Ensure space below the nav */
 }
 
+/* Navigation Circles */
 .nav-circle {
-  display: block;
   width: 20px;
   height: 20px;
-  margin-bottom: 10px;
-  background-color: #ccc; /* Light grey color*/
+  background-color: #ccc; /* Light grey color */
   border-radius: 50%;
   transition: background-color 0.3s;
   outline: none;
+  margin-bottom: 10px; /* Space between circles, adjust as needed */
 }
-
 .nav-circle:hover {
   background-color: white; /* Highlight color on hover */
 }
@@ -251,21 +250,23 @@ section {
   gap: 15px;                     /* Space between icons */
 }
 
-.icon, .fa-brands.fa-linkedin.fa-lg {
+.icon, .fa-brands.fa-github.fa-lg, .fa-brands.fa-linkedin.fa-lg {
   cursor: pointer;
-  height: 3rem;                  /* Size of the LinkedIn icon */
-  width: 3rem;                   /* Size of the LinkedIn icon */
+  height: 3rem;                  /* Size of the icons */
+  width: 3rem;                   /* Size of the icons */
   border-radius: 50%;            /* Circular shape */
   color: #ffffff;                /* Icon color */
   transition: transform 0.3s, color 0.3s; /* Smooth hover effects */
 }
 
+/* Adjust margin for GitHub icon */
 .fa-brands.fa-github.fa-lg {
   height: 2rem;                  /* Adjust height of the GitHub icon */
   width: 2rem;                   /* Adjust width to maintain circular shape */
   margin-bottom: 0;             /* Remove gap below the GitHub icon */
 }
 
+/* Adjust margin for LinkedIn icon */
 .fa-brands.fa-linkedin.fa-lg {
   margin-top: 0;                /* Remove gap above the LinkedIn icon */
 }
