@@ -251,12 +251,18 @@ section {
   gap: 15px;                     /* Space between icons */
 }
 
+.fa-brands.fa-github.fa-l{
+  margin-bottom: 10px;
+}
+.fa-brands.fa-linkedin.fa-lg{
+  margin-top: 10px;
+}
 .icon, .fa-brands.fa-github.fa-lg, .fa-brands.fa-linkedin.fa-lg {
   cursor: pointer;
   height: 3rem;                  /* Size of the icons */
   width: 3rem;                   /* Size of the icons */
   border-radius: 50%;            /* Circular shape */
-  color: #ffffff;                /* Icon color */
+  color: #ffffff;               /* Icon color */
   transition: transform 0.3s, color 0.3s; /* Smooth hover effects */
 }
 
