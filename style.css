@@ -429,8 +429,8 @@ section {
   border-radius: 0.5rem;
   box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background: #fff;
-  color: #0080FF;
+  background: #000; /* Change background color to black */
+  color: #fff; /* Change text color to white for contrast */
 }
 
 .skills-data:hover {
@@ -445,6 +445,7 @@ section {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
   color: #0080FF;
+  background-color: #0080FF;
 }
 
 /* Skill Names */
