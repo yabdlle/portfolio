@@ -257,6 +257,20 @@ section {
   max-width: 100%;  /* Ensure the photo does not exceed container width */
   height: auto;     /* Maintain aspect ratio */
 }
+.main_img img {
+  margin-top: 50px; /* Increase the top margin for more space */
+  width: 250px; /* Increase the width for a larger circle */
+  height: 250px; /* Increase the height to match width */
+  border-radius: 50%; /* Make the image a circle */
+  object-fit: cover; /* Ensure the image covers the entire area */
+  cursor: pointer;
+  overflow: hidden;
+  max-width: 375px; /* Limit the maximum size */
+  border: 3px solid white; /* Color and size of border */
+  margin-bottom: 100px; /* Space between the image and other elements */
+  animation: bounce 3.5s infinite alternate ease-in-out; /* Animation */
+  transition: transform 1s ease; /* Smooth transition for transformation */
+}
 
 #socials-container {
   display: flex;
@@ -280,21 +294,6 @@ section {
   color: #0080FF;      /* Slightly enlarge on hover */    
 }
 
-
-.main_img img {
-  margin-top: 50px; /* Increase the top margin for more space */
-  width: 250px; /* Increase the width for a larger circle */
-  height: 250px; /* Increase the height to match width */
-  border-radius: 50%; /* Make the image a circle */
-  object-fit: cover; /* Ensure the image covers the entire area */
-  cursor: pointer;
-  overflow: hidden;
-  max-width: 375px; /* Limit the maximum size */
-  border: 3px solid white; /* Color and size of border */
-  margin-bottom: 100px; /* Space between the image and other elements */
-  animation: bounce 3.5s infinite alternate ease-in-out; /* Animation */
-  transition: transform 1s ease; /* Smooth transition for transformation */
-}
 
 /* Bounce Animation */
 @keyframes bounce {
@@ -399,47 +398,53 @@ section {
 }
 
 
-.skills-container {
-  row-gap: 2rem;
-  text-align: center;
+/* Skills Section Styling */
+.skills-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding-top: 2rem;
 }
 
-
-
-/* Skills Section Styling */
+/* Skills Container */
 .skills-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Four equal columns */
-  gap: 2rem; /* Space between grid items */
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+  justify-content: center; /* Centers the items */
+  gap: 1rem; /* Space between items */
   text-align: center;
-  margin-top: 2rem; /* Add some space at the top */
+  margin-top: 1rem;
 }
 
 /* Skills Data Styling */
 .skills-data {
+  flex: 1 1 calc(25% - 1rem); /* Four items per row, adjust for gap */
+  max-width: calc(25% - 1rem); /* Ensure items do not exceed container width */
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.5rem; /* Increased padding for better spacing */
+  padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background: #fff; /* White background for clarity */
+  background: #fff;
+  color: #0080FF;
 }
 
 .skills-data:hover {
-  color: #0080FF;
   transform: translateY(-5px);
   box-shadow: 0 8px 30px rgba(14, 36, 49, 0.2);
-  background: #f0f8ff; /* Light blue background on hover */
+  background: #f0f8ff;
 }
 
 /* Skill Icons */
 .skills-icon {
-  width: 3rem; /* Larger icons for better visibility */
-  font-size: 3rem;
+  width: 2.5rem;
+  font-size: 2.5rem;
   margin-bottom: 0.5rem;
-  color: #0080FF; /* Blue color for icons */
+  color: #0080FF;
 }
 
 /* Skill Names */
@@ -451,8 +456,8 @@ section {
 
 .skills-name {
   font-size: 1rem;
-  color: #0080FF; /* Blue color for text */
-  font-weight: bold; /* Bold text for emphasis */
+  color: #0080FF;
+  font-weight: bold;
 }
 
 /* Hover Effect */
@@ -462,5 +467,15 @@ section {
 }
 
 .skills-data:hover .skills-name {
-  color: #0056b3; /* Darker blue for text on hover */
+  color: #0056b3;
 }
+
+/* Section Title Styling */
+.section-title {
+  color: #0080FF;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+
