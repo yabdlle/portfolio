@@ -545,7 +545,7 @@ body {
 .submit-btn {
   justify-content: center;
   align-items: center;
-  display: inline-block;
+  display: flex;
   padding: 10px 20px;
   background-color: #0080FF;
   color: #0A0A0A;
