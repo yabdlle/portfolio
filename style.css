@@ -96,6 +96,7 @@ a:hover {
   transition: all 0.3s ease-in-out;
 }
 
+
 /* Side Bar */
 .menu-links {
   position: absolute;
@@ -291,14 +292,15 @@ section {
   font-size: 4rem; /* Size of the icons */
   margin-bottom: 50px; /* Space below the icons */
   border-radius: 50%; /* Circular border */
-  transition: transform 0.3s, color 0.3s; /* Smooth hover effects */
-}
+  transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+
 
 .social-icon i:hover {
   transform: scale(1.1); /* Slightly enlarge on hover */
   color: #0056b3; /* Darker blue color on hover */
 }
-
 
 
 /* Bounce Animation */
@@ -312,58 +314,43 @@ section {
 }
 
 /* BUTTONS */
-
 .btn-container {
   display: flex;
   justify-content: center;
   gap: 1rem;
 }
 
-/* General Button Styles */
 .btn {
   font-weight: 600;
   transition: all 300ms ease;
   padding: 1rem;
   width: 8rem;
   border-radius: 2rem;
-  color: white; /* Ensures text color is white for both buttons */
+  color: white;
 }
 
-/* Button 1 Styles */
-.btn-color-1 {
-  background: #0A0A0A; /* Default background color */
-  border: gray 0.1rem solid; /* Matching border color */
+.btn-color-1,
+.btn-color-2 {
+  background: #0A0A0A;
+  border: gray 0.1rem solid;
 }
 
-.btn-color-1:hover {
+.btn-color-1:hover,
+.btn-color-2:hover {
   background: rgb(0, 0, 0);
   color: #0080FF;
-  transform: translateY(-5px); /* Darker color on hover */
-}
-
-/* Button 2 Styles */
-.btn-color-2 {
-  background: #0A0A0A; /* Match background color to button 1 */
-  border: gray 0.1rem solid; /* Matching border color */
-}
-
-.btn-color-2:hover {
-  background: rgb(0, 0, 0); /* Darker color on hover to match button 1 */
-  border: gray 0.1rem solid;
-   color: #0080FF;
-  transform: translateY(-5px); /* Maintain border color on hover */
+  transform: translateY(-5px);
 }
 
 /* About */
-
-.section-title{
+.section-title {
+  text-decoration: underline;
   color: #0080FF;
   font-size: 2rem;
   text-align: center;
 }
 
-
-.about-div{
+.about-div {
   text-align: center;
   font-size: 1.5rem;
 }
@@ -374,23 +361,21 @@ section {
   align-items: center;
   justify-content: center;
   margin-bottom: 10px;
-  background-color: white;
+  background-color: #0A0A0A;
   border-radius: 12px;
   padding: 20px;
   max-width: 800px;
-  margin: 20px auto; /* Current margin */
-  margin-top: -20px; /* Adjust this value to move the card up */
+  margin: 20px auto;
+  margin-top: -20px;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Text in the card */
 .about-text {
   text-align: center;
-  font-size: 1rem; /* Adjust font size */
+  font-size: 1rem;
 }
 
-/* Contact email section */
 .contact-email {
   text-align: center;
   margin-top: 0;
@@ -400,43 +385,37 @@ section {
   color: #0080FF;
   display: inline-block;
   margin-top: 10px;
-  font-size: 1rem; /* Adjust font size */
+  font-size: 1rem;
 }
 
-
-/* Skills Section Styling */
+/* Skills Section */
 .skills-section-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   min-height: 100vh;
-  padding-top: 2rem;
+  padding: 4rem 0;
 }
 
-/* Skills Container */
 .skills-container {
-  display: flex;
-  flex-wrap: wrap; /* Allows items to wrap to the next line */
-  justify-content: center; /* Centers the items */
-  gap: 1rem; /* Space between items */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
-/* Skills Data Styling */
 .skills-data {
-  flex: 1 1 calc(25% - 1rem); /* Four items per row, adjust for gap */
-  max-width: calc(25% - 1rem); /* Ensure items do not exceed container width */
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 0.5rem;
   box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background: #000; /* Change background color to black */
-  color: #fff; /* Change text color to white for contrast */
+  background: #000;
+  color: #fff;
 }
 
 .skills-data:hover {
@@ -445,7 +424,6 @@ section {
   background: #f0f8ff;
 }
 
-/* Skill Icons */
 .skills-icon {
   width: 2.5rem;
   font-size: 2.5rem;
@@ -454,7 +432,6 @@ section {
   background-color: #0080FF;
 }
 
-/* Skill Names */
 .skills-names {
   display: flex;
   flex-direction: column;
@@ -467,15 +444,11 @@ section {
   font-weight: bold;
 }
 
-/* Hover Effect */
-.skills-data:hover .skills-icon {
-  transform: scale(1.2);
-  transition: transform 0.3s ease;
+.skills-desc {
+  font-size: 0.9rem;
+  color: #ccc;
 }
 
-.skills-data:hover .skills-name {
-  color: #0056b3;
-}
 
 :root {
   --mb-2: 1rem; /* Example margin value */
@@ -528,6 +501,7 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   width: calc(100% - 2rem);
+  color: #0A0A0A;
   margin: auto;
 }
 
@@ -566,7 +540,7 @@ section {
 
 
 /* Contact section */
-/* Contact Section Styling */
+/* Contact section */
 .contact-section {
   padding: 60px 20px;
   background-color: #0A0A0A;
@@ -585,64 +559,70 @@ section {
   color: #0080FF;
 }
 
-/* Form Styling */
 .contact-form {
   width: 100%;
-  background: #0A0A0A; /* Ensure the form background is black */
+  background: #0A0A0A; /* Jett black background */
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
-/* Form Container */
 .form-container {
   margin-bottom: 20px;
 }
 
-/* Form Labels */
-.form-label {
+.form-container label {
   display: block;
   margin-bottom: 8px;
   font-weight: bold;
-  color: #0080FF; /* Label color */
+  color: #0080FF;
 }
 
-/* Form Inputs and Textarea */
-.form-input,
-.form-textarea {
+.form-container input,
+.form-container textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #333; /* Dark border for contrast */
+  border: 1px solid #333;
   border-radius: 5px;
   font-size: 1em;
-  background: #0A0A0A; /* Black background for inputs */
-  color: #fff; /* White text color */
+  background: #0A0A0A;
+  color: #fff;
   transition: border-color 0.3s ease-in-out;
 }
 
-/* Focus State for Inputs and Textarea */
-.form-input:focus,
-.form-textarea:focus {
-  border-color: #0080FF; /* Blue border on focus */
+.form-container input:focus,
+.form-container textarea:focus {
+  border-color: #0080FF;
   outline: none;
 }
 
-/* Submit Button */
 .submit-btn {
   justify-content: center;
   align-items: center;
   display: inline-block;
   padding: 10px 20px;
   background-color: #0080FF;
-  color: #0A0A0A; /* Black text for contrast */
+  color: #0A0A0A;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 1em;
-  transition: background-color 0.3s, transform 0.3s;
+  transition: background-color 0.3s, transform 0.3s; /* Added transition for smooth effect */
 }
 
 .submit-btn:hover {
   background-color: #005bb5;
   transform: scale(1.1);
 }
+/* Wrapper for all sections */
+.sections-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--mb-4); /* Gap between sections */
+}
+
+/* Add this class to the parent container that wraps all sections */
+
+
+
+
