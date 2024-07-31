@@ -280,19 +280,25 @@ section {
   gap: 2rem;                     /* Space between icons */
 }
 
+.social-icon {
+  display: inline-block; /* Align icons horizontally */
+  margin: 0 0.5rem; /* Space between icons */
+}
+
 .social-icon i {
   cursor: pointer;
-  font-size: 4rem; 
-  margin-bottom: 50px;
-  border-radius: 50%;               /* Increase icon size */
-  color: #ffffff;                /* Icon color */
+  color: #0080FF; /* Blue color for the icons */
+  font-size: 4rem; /* Size of the icons */
+  margin-bottom: 50px; /* Space below the icons */
+  border-radius: 50%; /* Circular border */
   transition: transform 0.3s, color 0.3s; /* Smooth hover effects */
 }
 
 .social-icon i:hover {
-  transform: scale(1.1);  
-  color: #0080FF;      /* Slightly enlarge on hover */    
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  color: #0056b3; /* Darker blue color on hover */
 }
+
 
 
 /* Bounce Animation */
@@ -471,20 +477,93 @@ section {
   color: #0056b3;
 }
 
-
-
-
-
-/* Contact section */
-/* Base styling */
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #000;
-  color: #fff;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+:root {
+  --mb-2: 1rem; /* Example margin value */
+  --mb-3: 1.5rem; /* Example margin value */
+  --mb-4: 2rem; /* Example margin value */
+  --h2-font-size: 1.5rem; /* Example font size for h2 */
 }
+
+/* Style for full-screen overlay */
+#image-overlay {
+  position: fixed; /* Fixed position to cover the whole screen */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  display: flex; /* Flex to center the image */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  z-index: 1000; /* High z-index to be on top of other content */
+}
+
+/* Class to be added to the image for full-screen view */
+.fullscreen-image {
+  max-width: 80%; /* Takes up most of the screen width */
+  max-height: 80%; /* And most of the screen height */
+  box-shadow: 0 0 10px #fff; /* Optional: adds a shadow to make it pop out */
+  cursor: pointer; /* Change cursor to indicate it can be closed */
+  transition: transform 1s; /* Smooth transition for scaling */
+}
+
+.fullscreen-image:hover {
+  transform: scale(1.1); /* Scale up the image on hover */
+}
+
+.project-section {
+  padding: var(--mb-4) 0; /* Padding for section */
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: var(--mb-4);
+  font-size: var(--h2-font-size);
+  color: #0080FF; /* Blue color for section title */
+}
+
+.project-container {
+  gap: 2rem;
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  width: calc(100% - 2rem);
+  margin: auto;
+}
+
+.project-img {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  padding: var(--mb-2); /* Add padding inside the project image container */
+}
+
+.project-img img {
+  transition: transform 1s;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  display: block; /* Ensure the image takes full width */
+}
+
+.project-img img:hover {
+  transform: scale(1.1);
+}
+
+.project-title {
+  color: #0080FF; /* Blue color for project titles */
+  font-weight: 600; /* Slightly bold */
+  margin: var(--mb-3) 0 var(--mb-2); /* Top and bottom margin */
+  font-size: var(--h2-font-size); /* Font size */
+}
+
+.project-description {
+  margin-bottom: var(--mb-2); /* Margin for description */
+}
+
+.languages {
+  color: #0080FF; /* Blue color for languages */
+  margin-top: var(--mb-3); /* Top margin */
+}
+
 
 /* Contact section */
 /* Contact section */
@@ -561,6 +640,7 @@ body {
   background-color: #005bb5;
   transform: scale(1.1);
 }
+
 
 
 
