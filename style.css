@@ -342,7 +342,6 @@ section {
   transform: translateY(-5px);
 }
 
-/* About */
 .section-title {
   text-decoration: underline;
   color: #0080FF;
@@ -350,10 +349,44 @@ section {
   text-align: center;
 }
 
-.about-div {
+.about-text {
   text-align: center;
   font-size: 1.5rem;
 }
+
+.contact-email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.contact-email p {
+  margin: 0; /* Remove default margin to control spacing precisely */
+  padding-top: 1rem; /* Add space at the top */
+}
+
+.contact-details {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Space between icon and email address */
+}
+
+.contact-email i {
+  font-size: 1.5rem; /* Adjust size if needed */
+}
+
+.email-highlight {
+  font-size: 1rem; /* Adjust size if needed */
+}
+
+.contact-email-text {
+  margin-bottom: 0.5rem; /* Space between the paragraph and email */
+  color: white; /* Set text color to white */
+}
+
+
 
 .card {
   display: flex;
