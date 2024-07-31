@@ -267,7 +267,7 @@ section {
   cursor: pointer;
   overflow: hidden;
   max-width: 375px; /* Limit the maximum size */
-  border: 3px solid white; /* Color and size of border */
+  border: 3px solid #0A0A0A; /* Color and size of border set to black */
   margin-bottom: 100px; /* Space between the image and other elements */
   animation: bounce 3.5s infinite alternate ease-in-out; /* Animation */
   transition: transform 1s ease; /* Smooth transition for transformation */
