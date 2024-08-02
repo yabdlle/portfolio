@@ -70,7 +70,7 @@ a:hover {
 
 .logo:hover {
   cursor: default;
-  color: gr;
+  color: #0080FF;
 }
 .project-section {
   padding: var(--mb-4) 0; /* Existing padding */
@@ -250,26 +250,6 @@ section {
   gap: 2rem;                     /* Space between icons */
 }
 
-.social-icon {
-  display: inline-block; /* Align icons horizontally */
-  margin: 0 0.5rem; /* Space between icons */
-}
-
-.social-icon i {
-  cursor: pointer;
-  color: #0080FF; /* Blue color for the icons */
-  font-size: 4rem; /* Size of the icons */
-  margin-bottom: 50px; /* Space below the icons */
-  border-radius: 50%; /* Circular border */
-  transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-
-
-.social-icon i:hover {
-  transform: scale(1.1); /* Slightly enlarge on hover */
-  color: #0056b3; /* Darker blue color on hover */
-}
 
 
 /* Bounce Animation */
@@ -450,10 +430,6 @@ section {
 
 .fullscreen-image:hover {
   transform: scale(1.1); /* Scale up the image on hover */
-}
-
-.project-section {
-  padding: var(--mb-4) 0; /* Padding for section */
 }
 
 
@@ -672,15 +648,12 @@ section {
   width: 100%; /* Full width */
   height: 2px; /* Height of the border */
   background-color: #0080FF; /* Border color */
+  display: block;
+  margin: 0; /* Ensure no extra margin */
+  padding: 0; /* Ensure no extra padding */
 }
 
-.footer-border-top {
-  top: 0; /* Position the top border at the top */
-}
 
-.footer-border-bottom {
-  bottom: 0; /* Position the bottom border at the bottom */
-}
 
 .footer-container {
   position: relative; /* Ensure relative positioning for proper content layout */
@@ -732,6 +705,7 @@ section {
 .footerBottom p {
   margin: 0; /* Remove margin to keep text aligned with footer */
 }
+
 
 
 
