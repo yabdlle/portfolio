@@ -595,7 +595,6 @@ section {
 }
 
 
-
 .form-label {
   display: block;
   margin-bottom: 5px;
@@ -634,6 +633,7 @@ section {
 
 /* Ensure full-width styling for the footer */
 .footer-class {
+  width: 100%;
   position: relative; /* Ensure relative positioning for nested elements */
   color: white; /* Text color */
   text-align: center; /* Center align text */
@@ -660,6 +660,7 @@ section {
   position: relative; /* Ensure relative positioning for proper content layout */
   z-index: 1; /* Ensure content is above borders */
   display: flex;
+  width: 100%;
   flex-direction: column; /* Arrange items in a column */
   align-items: center; /* Center items horizontally */
   justify-content: center; /* Center items vertically */
