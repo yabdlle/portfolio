@@ -55,5 +55,19 @@
     flex: 1 1 calc(100% - 1rem); /* One item per row on mobile */
     max-width: calc(100% - 1rem);
   }
+  @media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
   
 }

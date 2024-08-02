@@ -10,7 +10,6 @@
 
 body {
   background: #0A0A0A;
-  color: #fff;
 }
 
 html {
@@ -33,6 +32,7 @@ a, .btn {
 /* Navi bars and links */
 nav, .nav-links {
   display: flex;
+  font-size: 1.5rem;
 }
 
 nav {
@@ -299,10 +299,10 @@ section {
 }
 
 .section-title {
-  text-decoration: underline;
   color: #0080FF;
-  font-size: 2rem;
+  font-size: 4rem;
   text-align: center;
+  
 }
 
 .about-text {
@@ -609,9 +609,126 @@ section {
   flex-direction: column;
   gap: var(--mb-4); /* Gap between sections */
 }
+.contact-container {
+  margin-bottom: 40px;
+}
 
-/* Add this class to the parent container that wraps all sections */
+.section-title {
+  font-size: 2rem;
+  color: #333; /* Darker color for better readability */
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: transparent; /* Remove background color */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: none; /* Remove box shadow if previously set */
+}
+
+.form-container {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-input, .form-textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.submit-btn {
+  background-color: #0080FF; /* Button color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
 
 
+/* FOOTER */
 
+.footer-class {
+  background-color: #0080FF; /* Background color */
+  color: #0A0A0A; /* Text color */
+  text-align: center; /* Center text alignment */
+  font-weight: 600; /* Semi-bold font weight */
+  padding: 0; /* Remove padding */
+  width: 100%; /* Full width of the parent container */
+  box-sizing: border-box; /* Include padding and border in width */
+  overflow: hidden; /* Prevent overflow issues */
+}
 
+.contact-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px; /* Space below the contact logo */
+}
+
+.contact-logo h2 {
+  font-size: 2em; /* Adjust font size as needed */
+  color: #FFFFFF; /* White color for better contrast */
+  margin: 0; /* Remove default margin */
+}
+
+.footerContainer {
+  width: 100%; /* Full width of the parent container */
+  max-width: 1200px; /* Optional: set a max-width for large screens */
+  padding: 70px 30px 20px;
+  margin: 0 auto; /* Center align the container */
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Spacing between icons */
+  margin-bottom: 20px; /* Space below social icons */
+}
+
+.socialIcons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 10px;
+  background-color: #0080FF; /* Background color for icons */
+  border-radius: 50%;
+}
+
+.socialIcons a i {
+  font-size: 2em;
+  color: black;
+}
+
+.socialIcons a:hover {
+  background-color: #005BB5; /* Slightly darker blue for hover effect */
+}
+
+.footerNav {
+  margin: 30px 0;
+}
+
+.footerNav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.footerNav ul li {
+  margin: 0 10px;
