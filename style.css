@@ -569,20 +569,21 @@ section {
 
 .section-title {
   font-size:2rem;
-  color: white;
+  color:  #0080FF;
   text-align: center;
 }
 
 .contact-form {
-  max-width: 600px;
+  max-width: 2500px; /* Increase the maximum width */
   margin: 0 auto;
   background: transparent; /* Remove background color */
-  padding: 20px;
+  padding: 40px; /* Increase padding for more internal space */
   border-radius: 8px;
-  box-shadow: 0 0 20px rgba(0, 128, 255, 0.8); /* Balanced shadow */
+  box-shadow: 0 0 25px rgba(0, 128, 255, 0.8); /* Adjust shadow to match the larger size */
   position: relative; /* Ensure correct stacking context */
   z-index: 1; /* Make sure it's above other elements if needed */
 }
+
 
 .form-container {
   margin-bottom: 20px;
@@ -705,6 +706,26 @@ section {
 .footerBottom p {
   margin: 0; /* Remove margin to keep text aligned with footer */
 }
+.contact-email {
+  display: flex; /* or block, depending on your layout needs */
+  justify-content: center; /* Center horizontally if needed */
+  align-items: center; /* Center vertically if needed */
+  width: auto; /* Ensure it doesn't stretch unnecessarily */
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
+}
+.contact-email {
+  text-align: center;
+  margin-top: 0;
+}
+
+.contact-email span {
+  color: #0080FF;
+  display: inline; /* Ensure the span does not stretch */
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
 
 
 
