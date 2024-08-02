@@ -574,8 +574,7 @@ section {
 }
 
 .contact-form {
-  width: 100%; /* Make the form take up the full width of its container */
-  max-width: 1000px; /* Set a maximum width to control the size */
+  max-width: 2500px; /* Increase the maximum width */
   margin: 0 auto;
   background: transparent; /* Remove background color */
   padding: 40px; /* Increase padding for more internal space */
