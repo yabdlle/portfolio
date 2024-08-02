@@ -43,7 +43,7 @@ nav {
 }
 
 .nav-links {
-  gap: 2rem;
+  gap: 1.5rem;
   list-style: none;
 }
 
@@ -306,37 +306,6 @@ section {
   font-size: 1.5rem;
 }
 
-.contact-email {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 1rem 0;
-}
-
-.contact-email p {
-  margin: 0; /* Remove default margin to control spacing precisely */
-  padding-top: 1rem; /* Add space at the top */
-}
-
-.contact-details {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem; /* Space between icon and email address */
-}
-
-.contact-email i {
-  font-size: 1.5rem; /* Adjust size if needed */
-}
-
-.email-highlight {
-  font-size: 1rem; /* Adjust size if needed */
-}
-
-.contact-email-text {
-  margin-bottom: 0.5rem; /* Space between the paragraph and email */
-  color: white; /* Set text color to white */
-}
 
 
 
@@ -351,9 +320,7 @@ section {
   padding: 20px;
   max-width: 800px;
   margin: 20px auto;
-  margin-top: -20px;
   text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .about-text {
@@ -520,7 +487,6 @@ section {
 
 
 /* Contact section */
-/* Contact section */
 .contact-section {
   padding: 60px 20px;
   background-color: #0A0A0A;
@@ -540,15 +506,16 @@ section {
 }
 
 .contact-form {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   background: #0A0A0A; /* Jett black background */
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .form-container {
-  margin-bottom: 20px;
+  width: 100%; /* Ensure the form container takes full width */
 }
 
 .form-container label {
@@ -576,24 +543,28 @@ section {
   outline: none;
 }
 
+/* Adjust the button to be circular */
 .submit-btn {
-  justify-content: center;
-  align-items: center;
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #0080FF;
-  color: #0A0A0A;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1em;
-  transition: background-color 0.3s, transform 0.3s; /* Added transition for smooth effect */
+  width: 100%; /* Full width to match the message box */
+  padding: 10px; /* Add padding for better aesthetics */
+  border: none; /* Remove default border */
+  border-radius: 50%; /* Fully round the button */
+  background-color: #0A0A0A; /* Button color */
+  color: #0A0A0A;/* Text color */
+  font-size: 1rem; /* Adjust font size as needed */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+  text-align: center; /* Center text */
+  display: inline-flex; /* Align text within button */
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
 }
 
 .submit-btn:hover {
   background-color: #005bb5;
   transform: scale(1.1);
 }
+
 /* Wrapper for all sections */
 .sections-wrapper {
   display: flex;
@@ -646,6 +617,18 @@ section {
   cursor: pointer;
   font-size: 1rem;
 }
+.submit-btn:hover {
+  background-color: #005bb5; /* Darker color on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow effect */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Active effect */
+.submit-btn:active {
+  background-color: #004a99; /* Even darker color when clicked */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Reduce shadow on click */
+  transform: translateY(1px); /* Slightly lower effect when clicked */
+}
 
 
 .footer-class {
@@ -685,19 +668,23 @@ section {
 .footer-social {
   display: flex; /* Use flexbox for layout */
   justify-content: center; /* Center social icons horizontally */
+  align-items: center; /* Center icons vertically */
   margin-bottom: 1rem; /* Margin below social icons */
 }
 
 .footer-icon {
-  font-size: 1.5rem; /* Increase icon size */
+  font-size: 1.5rem; /* Increase icon size to 4rem for uniformity */
   color: #0080FF; /* Icon color */
   margin: 0 1rem; /* Horizontal margin between icons */
   text-decoration: none; /* Remove underline */
+  display: flex; /* Use flexbox to ensure alignment */
+  align-items: center; /* Center icon vertically */
 }
 
 .footer-icon i {
   display: block; /* Ensure icons are block-level */
 }
+
 
 .footerBottom {
   margin-top: 2rem; /* Margin above the bottom text */
