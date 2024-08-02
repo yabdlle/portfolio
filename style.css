@@ -637,7 +637,7 @@ section {
 
 
 .footer-class {
-  position: relative; /* Required for absolute positioning of the pseudo-element */
+  position: relative; /* Required for absolute positioning of the pseudo-elements */
   color: white; /* Text color */
   text-align: center; /* Center align text */
   padding: 3.5rem 0; /* Padding for vertical space */
@@ -645,16 +645,23 @@ section {
   overflow: hidden; /* Hide overflow to keep border effect clean */
 }
 
-.footer-class::before {
-  content: ""; /* Required for pseudo-element */
+.footer-class::before,
+.footer-class::after {
+  content: ""; /* Required for pseudo-elements */
   position: absolute; /* Absolute positioning */
-  top: 0; /* Align with top of footer */
-  left: -100vw; /* Move border to the left by viewport width */
-  width: 300vw; /* Extend width to cover both sides */
+  left: 0; /* Align with the left edge of the footer */
+  width: 100%; /* Extend across the full width of the footer */
   height: 2px; /* Height of the border */
-  border: none; /* Remove default border styling */
   background-color: #0080FF; /* Background color for border effect */
   z-index: -1; /* Place behind the footer content */
+}
+
+.footer-class::before {
+  top: 0; /* Position the top line at the top of the footer */
+}
+
+.footer-class::after {
+  bottom: 0; /* Position the bottom line at the bottom of the footer */
 }
 
 .footer-container {
@@ -680,14 +687,5 @@ section {
 .footer-icon {
   font-size: 1.5rem; /* Font size for icons */
   color: #0080FF; /* Icon color */
-  margin: 0 1rem; /* Horizontal margin between icons */
-  text-decoration: none; /* Remove underline */
-  display: flex; /* Use flexbox to ensure alignment */
-  align-items: center; /* Center icon vertically */
-}
-
-.footer-icon i {
-  display: block; /* Ensure icons are block-level */
-}
-
+  margi
 
