@@ -262,7 +262,7 @@ section {
 /* Bounce Animation */
 @keyframes bounce {
   0% {
-    transform: translateY(0);
+    transform: translateY(0);sectionsection__text
   }
   100% {
     transform: translateY(-20px);
@@ -615,7 +615,7 @@ section {
 
 .section-title {
   font-size: 2rem;
-  color: #333; /* Darker color for better readability */
+  color: white;
   margin-bottom: 20px;
 }
 
