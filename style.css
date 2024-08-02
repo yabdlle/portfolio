@@ -334,7 +334,9 @@ section {
   max-width: 800px;
   margin: 20px auto;
   text-align: center;
+  box-shadow: 0 0 20px rgba(0, 128, 255, 0.8); /* Balanced shadow */
 }
+
 
 .about-text {
   text-align: center;
@@ -600,11 +602,21 @@ section {
   background: transparent; /* Remove background color */
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 128, 255, 0.5); /* Dark blue box shadow */
+  box-shadow: 0 0 20px rgba(0, 128, 255, 0.8); /* Balanced shadow */
+  position: relative; /* Ensure correct stacking context */
+  z-index: 1; /* Make sure it's above other elements if needed */
 }
+
 .form-container {
   margin-bottom: 20px;
 }
+.contact-section h2 {
+  position: relative;
+  top: -20px; /* Adjust this value to move the heading up */
+  margin-bottom: 10px; /* Adjust as needed */
+}
+
+
 
 .form-label {
   display: block;
@@ -656,7 +668,7 @@ section {
 .footer-border-top, .footer-border-bottom {
   position: absolute; /* Absolute positioning for borders */
   left: 0; /* Align with the left edge */
-  width: 100vw; /* Full viewport width */
+  width: 100%; /* Full width */
   height: 2px; /* Height of the border */
   background-color: #0080FF; /* Border color */
 }
@@ -676,29 +688,40 @@ section {
   flex-direction: column; /* Arrange items in a column */
   align-items: center; /* Center items horizontally */
   justify-content: center; /* Center items vertically */
-  width: 100%; /* Ensure full width */
-  
 }
 
 .footer-title {
   font-size: 2rem; /* Font size for footer title */
-  margin-bottom: 1rem; /* Margin below the title */
+  margin: 1rem 0; /* Margin for spacing around the title */
 }
 
 .footer-social {
   display: flex; /* Use flexbox for layout */
   justify-content: center; /* Center social icons horizontally */
   align-items: center; /* Center icons vertically */
-  margin-bottom: 1rem; /* Margin below social icons */
+  margin: 1rem 0; /* Margin around social icons */
 }
 
 .footer-icon {
   font-size: 1.5rem; /* Font size for icons */
   color: #0080FF; /* Icon color to match border */
-  margin: 0 2rem; /* Horizontal margin between icons */
+  margin: 0 1rem; /* Horizontal margin between icons */
+}
+
+.footer-links {
+  margin: 1rem 0; /* Margin around links */
+}
+
+.footer-links a {
+  color: white; /* Link color */
   text-decoration: none; /* Remove underline */
-  display: flex; /* Use flexbox to ensure alignment */
-  align-items: center; /* Center icon vertically */
+  margin: 0 0.5rem; /* Horizontal margin between links */
+  font-size: 1.2rem; /* Font size for links */
+  transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.footer-links a:hover {
+  color: #0080FF; /* Color on hover */
 }
 
 .footerBottom {
@@ -706,8 +729,10 @@ section {
 }
 
 .footerBottom p {
-  margin: 0; /* Remove default margin for the paragraph */
+  margin: 0; /* Remove margin to keep text aligned with footer */
 }
+
+
 
 /* Basic styling for email container */
 .email-container {
