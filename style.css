@@ -635,36 +635,36 @@ section {
   transform: translateY(1px); /* Slightly lower effect when clicked */
 }
 
-
+/* Ensure full-width styling for the footer */
 .footer-class {
-  position: relative; /* Required for absolute positioning of the pseudo-elements */
+  position: relative; /* Ensure relative positioning for nested elements */
   color: white; /* Text color */
   text-align: center; /* Center align text */
   padding: 3.5rem 0; /* Padding for vertical space */
-  width: 100%; /* Ensure full width */
+  width: 100%; /* Full width */
+  background-color: #0A0A0A; /* Background color for footer */
   overflow: hidden; /* Hide overflow to keep border effect clean */
 }
 
-.footer-class::before,
-.footer-class::after {
-  content: ""; /* Required for pseudo-elements */
-  position: absolute; /* Absolute positioning */
-  left: 0; /* Align with the left edge of the footer */
-  width: 100%; /* Extend across the full width of the footer */
+.footer-border-top, .footer-border-bottom {
+  position: absolute; /* Absolute positioning for borders */
+  left: 0; /* Align with the left edge */
+  width: 100vw; /* Full viewport width */
   height: 2px; /* Height of the border */
-  background-color: #0080FF; /* Background color for border effect */
-  z-index: -1; /* Place behind the footer content */
+  background-color: #0080FF; /* Border color */
 }
 
-.footer-class::before {
-  top: 0; /* Position the top line at the top of the footer */
+.footer-border-top {
+  top: 0; /* Position the top border at the top */
 }
 
-.footer-class::after {
-  bottom: 0; /* Position the bottom line at the bottom of the footer */
+.footer-border-bottom {
+  bottom: 0; /* Position the bottom border at the bottom */
 }
 
 .footer-container {
+  position: relative; /* Ensure relative positioning for proper content layout */
+  z-index: 1; /* Ensure content is above borders */
   display: flex;
   flex-direction: column; /* Arrange items in a column */
   align-items: center; /* Center items horizontally */
@@ -686,8 +686,8 @@ section {
 
 .footer-icon {
   font-size: 1.5rem; /* Font size for icons */
-  color: #0080FF; /* Icon color */
-  margin: 0 2rem; /* Increased horizontal margin between icons */
+  color:  #0080FF; /* Icon color to match border */
+  margin: 0 2rem; /* Horizontal margin between icons */
   text-decoration: none; /* Remove underline */
   display: flex; /* Use flexbox to ensure alignment */
   align-items: center; /* Center icon vertically */
@@ -700,5 +700,3 @@ section {
 .footerBottom p {
   margin: 0; /* Remove default margin for the paragraph */
 }
-
-
