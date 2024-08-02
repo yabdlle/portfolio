@@ -687,5 +687,18 @@ section {
 .footer-icon {
   font-size: 1.5rem; /* Font size for icons */
   color: #0080FF; /* Icon color */
-  margi
+  margin: 0 2rem; /* Increased horizontal margin between icons */
+  text-decoration: none; /* Remove underline */
+  display: flex; /* Use flexbox to ensure alignment */
+  align-items: center; /* Center icon vertically */
+}
+
+.footerBottom {
+  margin-top: 1rem; /* Margin above the footer bottom text */
+}
+
+.footerBottom p {
+  margin: 0; /* Remove default margin for the paragraph */
+}
+
 
