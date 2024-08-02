@@ -630,67 +630,48 @@ section {
   transform: translateY(1px); /* Slightly lower effect when clicked */
 }
 
-
 .footer-class {
-  position: relative; /* Required for absolute positioning of the pseudo-element */
-  color: white; /* Text color */
-  text-align: center; /* Center align text */
-  padding: 3.5rem 0; /* Padding for vertical space */
-  width: 100%; /* Ensure full width */
-  overflow: hidden; /* Hide overflow to keep border effect clean */
+  position: relative; /* Ensure the footer can position child elements absolutely */
+  color: white;
+  text-align: center;
+  padding: 3.5rem 0;
+  width: 100%;
+  background-color: #0A0A0A; /* Background color of the footer */
 }
 
-.footer-class::before {
-  content: ""; /* Required for pseudo-element */
-  position: absolute; /* Absolute positioning */
-  top: 0; /* Align with top of footer */
-  left: -150vw; /* Move border to the left by more than the viewport width */
-  width: 400vw; /* Increase width further to extend beyond both sides */
-  height: 100%; /* Full height of the footer */
-  border: 2px solid #0080FF; /* Border around the footer */
-  box-sizing: border-box; /* Include border in element's total width and height */
-  z-index: -1; /* Place behind the footer content */
+.footer-top-line,
+.footer-bottom-line {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px; /* Thickness of the line */
+  background-color: #0080FF; /* Line color */
 }
 
-.footer-container {
-  display: flex;
-  flex-direction: column; /* Arrange items in a column */
-  align-items: center; /* Center items horizontally */
-  justify-content: center; /* Center items vertically */
-  width: 100%; /* Ensure full width */
+.footer-top-line {
+  top: 0; /* Line at the top */
 }
 
-.footer-class {
-  position: relative; /* Ensure the pseudo-element is positioned relative to this container */
-  overflow: visible; /* Allow pseudo-element to extend beyond the container if necessary */
+.footer-bottom-line {
+  bottom: 0; /* Line at the bottom */
+}
+
+.footer-content {
+  position: relative;
+  z-index: 1; /* Ensure footer content is above the lines */
 }
 
 .footer-title {
-  font-size: 2rem; /* Font size for footer title */
-  margin-bottom: 1rem; /* Margin below the title */
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .footer-social {
-  display: flex; /* Use flexbox for layout */
-  justify-content: center; /* Center social icons horizontally */
-  align-items: center; /* Center icons vertically */
-  margin-bottom: 1rem; /* Margin below social icons */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .footer-icon {
-  font-size: 1.5rem; /* Increase icon size to 4rem for uniformity */
-  color: #0080FF; /* Icon color */
-  margin: 0 1rem; /* Horizontal margin between icons */
-  text-decoration: none; /* Remove underline */
-  display: flex; /* Use flexbox to ensure alignment */
-  align-items: center; /* Center icon vertically */
-}
-
-.footer-icon i {
-  display: block; /* Ensure icons are block-level */
-}
-
-
-.footerBottom {
-  margin-top: 2rem; /* Margin above the bottom text */
-}
+  font-size: 1.5rem;
+  color: #0080FF;
