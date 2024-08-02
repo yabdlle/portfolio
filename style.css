@@ -600,9 +600,8 @@ section {
   background: transparent; /* Remove background color */
   padding: 20px;
   border-radius: 8px;
-  box-shadow: none; /* Remove box shadow if previously set */
+  box-shadow: 0 4px 8px rgba(0, 128, 255, 0.5); /* Dark blue box shadow */
 }
-
 .form-container {
   margin-bottom: 20px;
 }
