@@ -4,12 +4,7 @@
     display: none;
   }
   
-  #hamburger-nav {
-    display: flex;
-    align-items: center;
-    color: white;
-  }
-  
+
   .logo {
     display: flex;
     align-items: center;

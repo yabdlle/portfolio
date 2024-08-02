@@ -64,38 +64,6 @@ a:hover {
   color: gr;
 }
 
-#hamburger-nav {
-  display: none;
-}
-
-.hamburger-menu {
-  position: relative;
-  display: inline-block;
-}
-
-.typing {
-  transition: color 0.3s ease-in-out; /* Optional: smooth transition for color change */
-}
-
-/* Hamburger Navigation */
-.hamburger-icon {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 24px;                   /* Width of the hamburger icon */
-  height: 24px;                  /* Height of the hamburger icon */
-  cursor: pointer;
-}
-
-.hamburger-icon span {
-  display: block;                /* Ensure each line is a block */
-  width: 100%;
-  height: 2px;
-  background-color: white;       /* Set the background color to white */
-  transition: all 0.3s ease-in-out;
-}
-
 
 /* Side Bar */
 .menu-links {
@@ -126,18 +94,6 @@ a:hover {
 
 .menu-links.open {
   max-height: 300px;
-}
-
-.hamburger-icon.open span:first-child {
-  transform: rotate(45deg) translate(10px, 5px);
-}
-
-.hamburger-icon.open span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger-icon.open span:last-child {
-  transform: rotate(-45deg) translate(10px, -5px);
 }
 
 
