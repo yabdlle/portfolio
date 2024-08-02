@@ -574,7 +574,8 @@ section {
 }
 
 .contact-form {
-  max-width: 2500px; /* Increase the maximum width */
+  width: 100%; /* Make the form take up the full width of its container */
+  max-width: 1000px; /* Set a maximum width to control the size */
   margin: 0 auto;
   background: transparent; /* Remove background color */
   padding: 40px; /* Increase padding for more internal space */
@@ -643,22 +644,8 @@ section {
   overflow: hidden; /* Hide overflow to keep border effect clean */
 }
 
-.footer-border-top, .footer-border-bottom {
-  position: absolute; /* Absolute positioning for borders */
-  left: 0; /* Align with the left edge */
-  width: 100%; /* Full width */
-  height: 2px; /* Height of the border */
-  background-color: #0080FF; /* Border color */
-  display: block;
-  margin: 0; /* Ensure no extra margin */
-  padding: 0; /* Ensure no extra padding */
-}
-
-
 
 .footer-container {
-  position: relative; /* Ensure relative positioning for proper content layout */
-  z-index: 1; /* Ensure content is above borders */
   display: flex;
   width: 100%;
   flex-direction: column; /* Arrange items in a column */
@@ -700,13 +687,7 @@ section {
   color: #0080FF; /* Color on hover */
 }
 
-.footerBottom {
-  margin-top: 1rem; /* Margin above the footer bottom text */
-}
 
-.footerBottom p {
-  margin: 0; /* Remove margin to keep text aligned with footer */
-}
 .contact-email {
   display: flex; /* or block, depending on your layout needs */
   justify-content: center; /* Center horizontally if needed */
