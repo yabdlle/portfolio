@@ -648,78 +648,57 @@ section {
 }
 
 
-/* FOOTER */
-
 .footer-class {
-  background-color: #0080FF; /* Background color */
-  color: #0A0A0A; /* Text color */
-  text-align: center; /* Center text alignment */
-  font-weight: 600; /* Semi-bold font weight */
-  padding: 0; /* Remove padding */
-  width: 100%; /* Full width of the parent container */
-  box-sizing: border-box; /* Include padding and border in width */
-  overflow: hidden; /* Prevent overflow issues */
+  position: relative; /* Required for absolute positioning of the pseudo-element */
+  color: white; /* Text color */
+  text-align: center; /* Center align text */
+  padding: 3.5rem 0; /* Padding for vertical space */
+  width: 100%; /* Ensure full width */
+  overflow: hidden; /* Hide overflow to keep border effect clean */
 }
 
-.contact-logo {
+.footer-class::before {
+  content: ""; /* Required for pseudo-element */
+  position: absolute; /* Absolute positioning */
+  top: 0; /* Align with top of footer */
+  left: -150vw; /* Move border to the left by more than the viewport width */
+  width: 400vw; /* Increase width further to extend beyond both sides */
+  height: 100%; /* Full height of the footer */
+  border: 2px solid #0080FF; /* Border around the footer */
+  box-sizing: border-box; /* Include border in element's total width and height */
+  z-index: -1; /* Place behind the footer content */
+}
+
+.footer-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px; /* Space below the contact logo */
+  flex-direction: column; /* Arrange items in a column */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  width: 100%; /* Ensure full width */
 }
 
-.contact-logo h2 {
-  font-size: 2em; /* Adjust font size as needed */
-  color: #FFFFFF; /* White color for better contrast */
-  margin: 0; /* Remove default margin */
+.footer-title {
+  font-size: 2rem; /* Font size for footer title */
+  margin-bottom: 1rem; /* Margin below the title */
 }
 
-.footerContainer {
-  width: 100%; /* Full width of the parent container */
-  max-width: 1200px; /* Optional: set a max-width for large screens */
-  padding: 70px 30px 20px;
-  margin: 0 auto; /* Center align the container */
-  box-sizing: border-box; /* Include padding in width */
+.footer-social {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center social icons horizontally */
+  margin-bottom: 1rem; /* Margin below social icons */
 }
 
-.socialIcons {
-  display: flex;
-  justify-content: center;
-  gap: 10px; /* Spacing between icons */
-  margin-bottom: 20px; /* Space below social icons */
+.footer-icon {
+  font-size: 1.5rem; /* Increase icon size */
+  color: #0080FF; /* Icon color */
+  margin: 0 1rem; /* Horizontal margin between icons */
+  text-decoration: none; /* Remove underline */
 }
 
-.socialIcons a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  padding: 10px;
-  background-color: #0080FF; /* Background color for icons */
-  border-radius: 50%;
+.footer-icon i {
+  display: block; /* Ensure icons are block-level */
 }
 
-.socialIcons a i {
-  font-size: 2em;
-  color: black;
+.footerBottom {
+  margin-top: 2rem; /* Margin above the bottom text */
 }
-
-.socialIcons a:hover {
-  background-color: #005BB5; /* Slightly darker blue for hover effect */
-}
-
-.footerNav {
-  margin: 30px 0;
-}
-
-.footerNav ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style-type: none;
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
-}
-
-.footerNav ul li {
-  margin: 0 10px;
