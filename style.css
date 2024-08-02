@@ -649,11 +649,11 @@ section {
   content: ""; /* Required for pseudo-element */
   position: absolute; /* Absolute positioning */
   top: 0; /* Align with top of footer */
-  left: -150vw; /* Move border to the left by more than the viewport width */
-  width: 400vw; /* Increase width further to extend beyond both sides */
-  height: 100%; /* Full height of the footer */
-  border: 2px solid #0080FF; /* Border around the footer */
-  box-sizing: border-box; /* Include border in element's total width and height */
+  left: -100vw; /* Move border to the left by viewport width */
+  width: 300vw; /* Extend width to cover both sides */
+  height: 2px; /* Height of the border */
+  border: none; /* Remove default border styling */
+  background-color: #0080FF; /* Background color for border effect */
   z-index: -1; /* Place behind the footer content */
 }
 
@@ -664,7 +664,6 @@ section {
   justify-content: center; /* Center items vertically */
   width: 100%; /* Ensure full width */
 }
-
 
 .footer-title {
   font-size: 2rem; /* Font size for footer title */
@@ -679,7 +678,7 @@ section {
 }
 
 .footer-icon {
-  font-size: 1.5rem; /* Increase icon size to 4rem for uniformity */
+  font-size: 1.5rem; /* Font size for icons */
   color: #0080FF; /* Icon color */
   margin: 0 1rem; /* Horizontal margin between icons */
   text-decoration: none; /* Remove underline */
