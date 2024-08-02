@@ -53,3 +53,35 @@ window.onload = function() {
   typewriter();
 };
 
+
+document.addEventListener('DOMContentLoaded', () => {
+  const copyEmailIcon = document.getElementById('copy-email-icon');
+  const email = document.getElementById('email');
+  const copiedMessage = document.getElementById('copied');
+  
+  // Highlight email on mouseover
+  copyEmailIcon.addEventListener('mouseover', () => {
+      email.classList.add('highlight-email');
+  });
+
+  // Remove highlight on mouseout
+  copyEmailIcon.addEventListener('mouseout', () => {
+      email.classList.remove('highlight-email');
+  });
+
+  // Copy email functionality
+  copyEmailIcon.addEventListener('click', () => {
+      navigator.clipboard.writeText(email.textContent).then(() => {
+          copiedMessage.textContent = 'Copied!';
+          copiedMessage.classList.add('active');
+
+          // Remove the "Copied" message after a few seconds
+          setTimeout(() => {
+              copiedMessage.classList.remove('active');
+              copiedMessage.textContent = '';
+          }, 2000); // 2 seconds before "Copied" message disappears
+      }).catch(err => {
+          console.error('Failed to copy text: ', err);
+      });
+  });
+});
