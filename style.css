@@ -8,6 +8,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   background: #0A0A0A;
 }
@@ -62,6 +63,10 @@ a:hover {
 .logo:hover {
   cursor: default;
   color: gr;
+}
+.project-section {
+  padding: var(--mb-4) 0; /* Existing padding */
+  margin-bottom: 4rem; /* Add this line to increase the space below projects */
 }
 
 
