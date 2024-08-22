@@ -400,6 +400,11 @@ section {
   margin-bottom: 8rem; /* Space below the Skills section to match Projects section margin-top */
 }
 
+#projects-title { /* Adjust padding if necessary */
+  margin-bottom: 1rem; /* Add margin to create a gap */
+}
+
+
 /* General project section styles */
 /* General project section styles */
 .project-section {
