@@ -436,7 +436,7 @@ section {
   box-shadow: 0 4px 25px rgba(49, 17, 14, 0.5); /* Larger shadow for depth */
   border-radius: 0.5rem; /* Rounded corners */
   overflow: hidden; /* Hide overflow */
-  background-color: #1c1c1c; /* Dark grey background */
+  background-color: #0A0A0A; /* Dark grey background */
   display: flex; /* Flexbox layout */
   flex-direction: column;
   height: 100%; /* Ensure all cards have the same height */
@@ -718,7 +718,7 @@ section {
 .footer-title {
   font-size: 20px; /* Larger font size for emphasis */
   font-weight: bold; /* Make the text bold */
-  color: #ffffff; /* White text color for contrast */
+  color: #0A0A0A; /* White text color for contrast */
   margin-bottom: 20px; /* Space below the title */
   text-transform: uppercase; /* Uppercase text for a formal look */
   letter-spacing: 1px; /* Slightly increase letter spacing for readability */
@@ -740,7 +740,7 @@ s
 }
 
 .footer-nav ul li a {
-  color: #ffffff; /* White text color for links */
+  color: #0A0A0A; /* White text color for links */
   text-decoration: none; /* Remove underline from links */
 }
 
