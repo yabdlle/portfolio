@@ -301,7 +301,7 @@ section {
   padding: 20px;
   max-width: 800px;
   margin: 20px auto;
-  margin-top: -100px; /* Adjust this value to move the card up */
+  margin-top: -160px; /* Adjust this value to move the card up */
   text-align: center;
   box-shadow: 0 0 20px rgba(0, 128, 255, 0.8); /* Balanced shadow */
 }
@@ -324,6 +324,7 @@ section {
 /* Skills Section */
 .skills-section {
     display: flex;
+    margin-top: 75px;
     flex-direction: column;
     align-items: center;
     padding: 4rem 0;
