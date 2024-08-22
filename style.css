@@ -630,12 +630,11 @@ section {
   outline: none;
 }
 
-/* Adjust the button to be circular and larger */
 .submit-btn {
   width: 100%; /* Full width to match the message box */
-  padding: 12px; /* Increased padding for better aesthetics */
+  padding: 14px 24px; /* Adjusted padding for a more balanced look */
   border: none; /* Remove default border */
-  border-radius: 6px; /* More rounded corners */
+  border-radius: 50%; /* Fully rounded corners for a pill-shaped button */
   background-color: #0080FF; /* Button color */
   color: white; /* Text color */
   font-size: 1.2rem; /* Adjust font size */
@@ -645,12 +644,15 @@ section {
   display: inline-flex; /* Align text within button */
   align-items: center; /* Center text vertically */
   justify-content: center; /* Center text horizontally */
+  box-shadow: 0 4px 10px rgba(0, 128, 255, 0.2); /* Subtle shadow for depth */
 }
 
 .submit-btn:hover {
   background-color: #005bb5; /* Darker color on hover */
-  transform: scale(1.05); /* Slightly enlarge button on hover */
+  transform: scale(1.07); /* Slightly enlarge button on hover for emphasis */
+  box-shadow: 0 6px 15px rgba(0, 91, 181, 0.3); /* Enhance shadow on hover */
 }
+
 
 /* Wrapper for all sections */
 .sections-wrapper {
@@ -706,11 +708,10 @@ section {
   transform: translateY(1px); /* Slightly lower effect when clicked */
 }
 
-/* General styles for the footer */
 .footer-class {
-  background-color: #0080FF; /* Set the background color of the footer */
-  color: white; /* Set the text color to white */
-  padding: 40px 30px; /* Adjust padding as needed */
+  background-color: #0062CC; /* Updated background color */
+  color: white; /* Keep the text color */
+  padding: 20px 30px; /* Adjust padding as needed */
   text-align: center; /* Center the text and icons */
   width: 100%;
 }
@@ -719,36 +720,37 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px; /* Space between content and bottom section */
+  margin-bottom: 10px; /* Reduced space between content and bottom section */
 }
 
 .footer-title {
-  font-size: 20px; /* Larger font size for emphasis */
-  font-weight: bold; /* Make the text bold */
-  color: #0A0A0A; /* White text color for contrast */
-  margin-bottom: 20px; /* Space below the title */
-  text-transform: uppercase; /* Uppercase text for a formal look */
-  letter-spacing: 1px; /* Slightly increase letter spacing for readability */
+  font-size: 20px; /* Revert to original font size */
+  font-weight: bold; /* Keep the text bold */
+  color: #0A0A0A; /* Dark text color for contrast */
+  margin-bottom: 10px; /* Reduced space below the title */
+  text-transform: uppercase; /* Keep uppercase text */
+  letter-spacing: 1px; /* Keep letter spacing */
   font-family: "Poppins", sans-serif; /* Consistent with other font choices */
 }
 
 .footer-nav {
-  margin-bottom: 16px; /* Space between navigation and social icons */
+  margin-bottom: 12px; /* Reduced space between navigation and social icons */
 }
-s
+
 .footer-nav ul {
   list-style: none; /* Remove bullets from list */
   padding: 0;
 }
 
 .footer-nav ul li {
-  display: inline; /* Display list items inline */
-  margin: 0 10px; /* Space between items */
+  display: inline; /* Keep items inline */
+  margin: 0 8px; /* Reduced space between items */
 }
 
 .footer-nav ul li a {
-  color: #0A0A0A; /* White text color for links */
+  color: #0A0A0A; /* Dark text color for links */
   text-decoration: none; /* Remove underline from links */
+  font-size: 19.2px; /* Revert to original font size for links */
 }
 
 .footer-nav ul li a:hover {
@@ -756,28 +758,25 @@ s
 }
 
 .footer-social {
-  margin-bottom: 20px; /* Space between social icons and footer bottom */
+  margin-bottom: 15px; /* Reduced space between social icons and footer bottom */
 }
 
 .footer-icon {
-  color: white; /* Set icon color to white */
-  font-size: 24px; /* Adjust icon size as needed */
-  margin: 0 10px; /* Space between icons */
+  color: white; /* Keep icon color white */
+  font-size: 24px; /* Revert to original icon size */
+  margin: 0 8px; /* Reduced space between icons */
   text-decoration: none; /* Remove underline from links */
 }
 
 .footer-icon:hover {
-  opacity: 0.8; /* Add hover effect to icons */
+  opacity: 0.8; /* Keep hover effect */
 }
 
 .footer-bottom {
-  font-size: 14px; /* Adjust font size as needed */
-  color: white; /* Set text color to white */
+  font-size: 14px; /* Revert to original font size */
+  color: white; /* Keep text color white */
 }
 
-.footer-bottom .designer {
-  font-weight: bold; /* Make designer name bold */
-}
 
 
 #copy-email-icon {
