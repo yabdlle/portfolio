@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youssef Abdulle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/dce5591201.js" cross2origin="anonymous"></script>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Content -->
+    <nav id="desktop-nav">
+        <div class="logo">YA</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li> 
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Side Navigation -->
+    <div class="side-nav">
+        <a href="#home" class="nav-circle"></a>
+        <a href="#skills" class="nav-circle"></a>
+        <a href="#projects" class="nav-circle"></a>
+        <a href="#contact" class="nav-circle"></a>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="section__text">
+            <p class="section__text__p1">Hi I'm</p>
+            <h1 class="title" style="color: white;">Youssef</h1>
+            <p class="section__text__p2">
+                <span id="jobTitle"></span>
+            </p>
+        </div>
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('assets/Youssef_Abdulle.pdf')">Resume</button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact</button>
+        </div>
+        <div class="main_grid">
+            <div class="main_img">
+                <img src="assets/me.png" alt="me"/>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+      <div class="about-container bd-grid">
+        <div class="card">
+          <p class="about-text">
+            Hello, my name is Youssef Abdulle, I am a Junior Computer Science Student at the University of Minnesota – 
+            Twin Cities. Driven by a deep enthusiasm for technology, I have hands-on experience with a broad range of developer tools and programming languages. 
+            I am passionate about continually expanding my skill set by learning and applying new technologies.
+            Outside of my studies, I love reading, exploring the outdoors, and lifting weights. 
+            I am eager and excited to embrace opportunities in the tech industry and leverage my technical background to foster my growth. 
+            I look forward to connecting my diverse experiences and skills with the ever-evolving world of technology!
+          </p>
+          <div class="email-container">
+            <p class="email-text">Feel free to reach out by email!</p>
+            <p id="email" class="email-address" style="color: #0080FF;">abdul664@umn.edu</p>
+            <i class="fas fa-copy" id="copy-email-icon" title="Copy Email"></i>
+            <div id="copied" class="hidden">Copied!</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills-section" id="skills">
+      <h2 class="section-title" style="margin-bottom: 1rem;">Skills</h2>
+      <p class="section-subtext" style="margin-bottom: 3rem;">Here are just some of the technologies I'm familiar with!</p>
+
+      <!-- Skills Cards Row -->
+      <div class="skills-cards-container">
+          <!-- Programming Languages Card -->
+          <div class="skills-card">
+              <h3 class="skills-card-title">Programming Languages</h3>
+              <div class="skills-card-content">
+                  <div class="skills-data">
+                      <i class="fab fa-python skill-icon"></i>
+                      <span class="skills-name">Python</span>
+                  </div>
+                  <div class="skills-data">
+                      <i class="fab fa-java skill-icon"></i>
+                      <span class="skills-name">Java</span>
+                  </div>
+                  <div class="skills-data">
+                      <i class="fas fa-c skill-icon"></i>
+                      <span class="skills-name">C/C++</span>
+                  </div>
+                  <div class="skills-data">
+                      <i class="fa-solid fa-terminal skill-icon"></i>
+                      <span class="skills-name">OCaml</span>
+                  </div>
+                  <div class="skills-data">
+                      <i class="fa-solid fa-memory skill-icon"></i>
+                      <span class="skills-name">Assembly</span>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Full Stack Tools Card -->
+          <div class="skills-card">
+              <h3 class="skills-card-title">Full Stack Tools</h3>
+              <div class="skills-card-content">
+                  <div class="skills-data">
+                      <i class="fab fa-html5 skill-icon"></i>
+                      <span class="skills-name">HTML</span>
+                  </div>
+                  <div class="skills-data">
+                      <i class="fab fa-css3-alt skill-icon"></i>
+                      <span class="skills-name">CSS</span>
+                  </div>
+                  <div class="skills-data">
+                      <i class="fab fa-js skill-icon"></i>
+                      <span class="skills-name">JavaScript</span>
+                  </div>
+                  <div class="skills-data">
+                      <i class="fab fa-node skill-icon"></i>
+                      <span class="skills-name">Node.js</span>
+                  </div>
+                  <div class="skills-data">
+                      <i class="fab fa-react skill-icon"></i>
+                      <span class="skills-name">React</span>
+                  </div>
+                  <div class="skills-data">
+                    <i class="fa-brands fa-codepen skill-icon"></i>
+                    <span class="skills-name">Next.js</span>
+                </div>
+                <div class="skills-data">
+                  <i class="fa-solid fa-users skill-icon"></i>
+                  <span class="skills-name">Firebase</span>
+              </div>
+              </div>
+          </div>
+
+          <!-- Other Tools Card -->
+          <div class="skills-card">
+              <h3 class="skills-card-title">Other Tools</h3>
+              <div class="skills-card-content">
+                  <div class="skills-data">
+                      <i class="fab fa-git-alt skill-icon"></i>
+                      <span class="skills-name">Git</span>
+                  </div>
+                  <div class="skills-data">
+                      <i class="fab fa-docker skill-icon"></i>
+                      <span class="skills-name">Docker</span>
+                  </div>
+                  <div class="skills-data">
+                    <i class="fa-regular fa-file-code skill-icon"></i>
+                    <span class="skills-name">VSCode</span>
+                </div>
+                <div class="skills-data">
+                  <i class="fa-solid fa-code skill-icon"></i>
+                  <span class="skills-name">Eclipse</span>
+                </div>                    
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="project-section" id="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="project-container">
+        <!-- HeadStart AI Project -->
+        <div class="project-img">
+          <img src="./assets/ai.png" alt="HeadStart AI" class="fullscreen-image">
+          <p class="project-title" style="color: #0080FF;">HeadStart AI</p>
+          <p class="project-description">
+            Created an AI-powered customer support chatbot using natural language processing techniques, enabling efficient and context-aware responses to user inquiries. Designed with a user-friendly interface and integrated with various communication channels for seamless customer interaction.
+          </p>
+          <p class="project-languages">JavaScript, Meta Llama 3.1 API, Next.js</p>
+          <a href="https://github.com/yourusername/headstart-ai" class="github-link" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+
+        <!-- Pantry Inventory Tracker Project -->
+        <div class="project-img">
+          <img src="./assets/pantry.png" alt="Pantry Inventory Tracker" class="fullscreen-image">
+          <p class="project-title" style="color: #0080FF;">Pantry Inventory Tracker</p>
+          <p class="project-description">
+            Developed a pantry inventory tracker with a team, utilizing Next.js and Material UI for a responsive UI, implemented a scalable Firebase backend for real-time synchronization, and enhanced user experience with mobile image capture and OpenAI's GPT Vision API for classification and recipe suggestions.
+          </p>
+          <p class="project-languages">JavaScript, OpenAI API, Next.js, Firebase</p>
+          <a href="https://github.com/yourusername/pantry-inventory-tracker" class="github-link" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+
+        <!-- Spell Checker Project -->
+        <div class="project-img">
+          <img src="./assets/image.png" alt="Spell Checker" class="fullscreen-image">
+          <p class="project-title" style="color: #0080FF;">Spell Checker</p>
+          <p class="project-description">
+            Developed a C-based spell checker using a hash table and dynamic memory management, optimized with malloc and free, and included a command-line interface for dictionary manipulation and text file spell checking, streamlined with a Makefile for efficient compilation and automated testing.
+          </p>
+          <p class="project-languages">C</p>
+          <a href="https://github.com/yourusername/spell-checker" class="github-link" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <br>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-container">
+        <h2>Connect with Me!</h2>
+        <form action="#" method="post" class="contact-form">
+          <div class="form-container">
+            <input type="text" id="name" name="name" required class="form-input" placeholder="Name">
+          </div>
+          <div class="form-container">
+            <input type="email" id="email" name="email" required class="form-input" placeholder="Email">
+          </div>
+          <div class="form-container">
+            <textarea id="message" name="message" rows="5" required class="form-textarea" placeholder="Message"></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer-class">
+      <div class="footer-content">
+          <div class="footer-title" style="font-family: sans-serif;" style="font-size: 20px;">Youssef Abdulle</div>
+          <div class="footer-nav">
+              <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#contact">Contact</a></li>
+              </ul>
+          </div>
+          <div class="footer-social">
+              <a href="https://github.com/yabdlle" class="footer-icon" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/yabdlle" class="footer-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="mailto:abdul664@umn.edu" class="footer-icon"><i class="fas fa-envelope"></i></a>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>© 2024 Youssef Abdulle. All rights reserved.</p>
+      </div>
+  </footer>
+  
+
+</body>
+</html>

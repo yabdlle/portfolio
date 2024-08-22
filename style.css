@@ -1,0 +1,798 @@
+/* GENERAL BEHAVIOR */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  background: #0A0A0A;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: white;
+}
+
+/* Transition */
+a, .btn {
+  transition: all 300ms ease;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+/* Navi bars and links */
+nav, .nav-links {
+  display: flex;
+  font-size: 1.5rem;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  gap: 1.5rem;
+  list-style: none;
+}
+
+/* Link Behavior */
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0080FF;
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.logo:hover {
+  cursor: default;
+  color: #0080FF;
+}
+
+
+/* Side Bar */
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  color: white;
+  background-color: black;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+
+/* Side Navigation */
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 50%; /* Center vertically */
+  left: 20px;
+  transform: translateY(-40%);
+  z-index: 10;
+  margin-bottom: 20px; /* Ensure space below the nav */
+}
+
+/* Navigation Circles */
+.nav-circle {
+  width: 20px;
+  height: 20px;
+  background-color: #ccc; /* Light grey color */
+  border-radius: 50%;
+  transition: background-color 0.3s;
+  outline: none;
+  margin-bottom: 10px; /* Space between circles, adjust as needed */
+}
+.nav-circle:hover {
+  background-color: #0080FF; /* Highlight color on hover */
+}
+
+/* Style for the active section indicator with a border */
+.nav-circle.active {
+  background-color: #2fcff4; /* Active section color */
+  position: relative; /* For pseudo-element positioning */
+}
+
+.nav-circle.active::after {
+  content: '';
+  position: absolute;
+  top: -5px; /* Adjust as needed */
+  left: -5px; /* Adjust as needed */
+  width: 30px; /* Adjust to match the new size with the border */
+  height: 30px; /* Adjust to match the new size with the border */
+  border: 2px solid #2fcff4; /* Border color */
+  border-radius: 50%;
+  box-sizing: border-box; /* To include the border in the width and height */
+  z-index: -1;
+}
+
+section {
+  padding-top: 4vh; /* Adjust this as needed */
+  padding-bottom: 4vh; /* Added for bottom padding */
+  margin: 0 10%;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+
+.section_container {
+  display: flex;
+}
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 96vh;
+  margin-top: -20%;
+}
+
+.section__pic-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
+  position: relative;           /* Make it possible to position elements relative to .section__text */
+}
+
+.section__text p {
+  font-weight: 600;
+}
+
+.section__text__p1 {
+  text-align: center;
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  position: relative;
+}
+
+.main_grid {
+  display: flex;
+  flex-direction: column;   /* Stack photo and icons vertically */
+  align-items: center;      /* Center items horizontally */
+  text-align: center;       /* Center text (if needed) */
+}
+
+.main_img {
+  display: flex;
+  justify-content: center;  /* Center the photo horizontally */
+}
+
+.main_img img {
+  max-width: 100%;  /* Ensure the photo does not exceed container width */
+  height: auto;     /* Maintain aspect ratio */
+}
+.main_img img {
+  margin-top: 50px; /* Increase the top margin for more space */
+  width: 250px; /* Increase the width for a larger circle */
+  height: 250px; /* Increase the height to match width */
+  border-radius: 50%; /* Make the image a circle */
+  object-fit: cover; /* Ensure the image covers the entire area */
+  cursor: pointer;
+  overflow: hidden;
+  max-width: 375px; /* Limit the maximum size */
+  border: 3px solid #0A0A0A; /* Color and size of border set to black */
+  margin-bottom: 100px; /* Space between the image and other elements */
+  animation: bounce 3.5s infinite alternate ease-in-out; /* Animation */
+  transition: transform 1s ease; /* Smooth transition for transformation */
+}
+
+
+/* Bounce Animation */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+/* BUTTONS */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+  color: white;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  background: #0A0A0A;
+  border: gray 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  background: rgb(0, 0, 0);
+  color: #0080FF;
+  transform: translateY(-5px);
+}
+
+
+
+
+.about-text {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  background-color: #0A0A0A;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  margin-top: -100px; /* Adjust this value to move the card up */
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 128, 255, 0.8); /* Balanced shadow */
+}
+.about-text {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.contact-email {
+  text-align: center;
+  margin-top: 0;
+}
+
+.contact-email span {
+  color: #0080FF;
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+/* Skills Section */
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+.skills-subtext {
+    margin-bottom: 3rem;
+}
+
+/* Skills Cards Row */
+.skills-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust spacing between cards */
+}
+
+/* Individual Skill Card */
+.skills-card {
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 2rem;
+    background-color: #000;
+    color: #fff;
+    flex: 1 1 calc(33.333% - 20px);
+    box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(14, 36, 49, 0.2);
+}
+
+.skills-card-title {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #0080FF;
+    margin-bottom: 1.5rem;
+}
+
+.skills-card-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.skills-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background: #000;
+    color: #fff;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.skills-name {
+    font-size: 1rem;
+    color: #0080FF;
+    font-weight: bold;
+}
+
+/* Skills Section */
+.skills-section {
+  padding: 4rem 1rem; /* Padding around the Skills section */
+  margin-bottom: 8rem; /* Space below the Skills section to match Projects section margin-top */
+}
+
+/* General project section styles */
+/* General project section styles */
+.project-section {
+  padding: 2rem 1rem; /* Padding around the section */
+  background-color: #0A0A0A; /* Uber black background color */
+  color: var(--text-color); /* Text color */
+}
+
+.section-title {
+  margin-bottom: var(--mb-4); /* Margin bottom */
+  font-size: 2.5rem; /* Larger font size for better visibility */
+  text-align: center; /* Center align the section title */
+  color: #0080FF;
+}
+
+.section-subtext {
+  text-align: center; /* Center align the subtext */
+  font-size: 1.25rem; /* Larger font size for readability */
+  margin-bottom: var(--mb-3); /* Space below the subtext */
+}
+
+/* Add margin-bottom to create a gap between the section title and project cards */
+.project-container {
+  gap: 2rem; /* Gap between project cards */
+  max-width: 1200px; /* Max width for the project container */
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr)); /* Two cards per row */
+  width: calc(100% - 2rem); /* Full width minus padding */
+  margin: auto; /* Center the container */
+  margin-top: var(--mb-4); /* Gap between the section title and project cards */
+}
+
+.project-img {
+  box-shadow: 0 4px 25px rgba(49, 17, 14, 0.5); /* Larger shadow for depth */
+  border-radius: 0.5rem; /* Rounded corners */
+  overflow: hidden; /* Hide overflow */
+  background-color: #1c1c1c; /* Dark grey background */
+  display: flex; /* Flexbox layout */
+  flex-direction: column;
+  height: 100%; /* Ensure all cards have the same height */
+  justify-content: space-between; /* Space between title, description, and languages */
+}
+
+.project-img img {
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  cursor: pointer;
+  width: 100%; /* Full width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.project-img img:hover {
+  transform: scale(1.1); /* Larger scale effect on hover */
+}
+
+.project-title {
+  color: var(--accent-color); /* Blue color for project titles */
+  font-weight: 600; /* Slightly bold */
+  margin-top: auto; /* Pushes the title to the bottom */
+  margin-bottom: var(--mb-2); /* Margin at the bottom */
+  padding: 1rem; /* Padding around the title */
+  text-align: center; /* Center align title */
+  font-size: var(--h2-font-size); /* Font size from CSS variables */
+}
+
+.project-description {
+  margin: 0 1rem; /* Margin for description */
+  line-height: 1.6; /* Improve readability */
+  text-align: center; /* Center align description */
+}
+
+/* Style for project languages boxes */
+.project-languages {
+  display: flex; /* Flexbox for aligning items */
+  flex-wrap: wrap; /* Allow wrapping to new lines */
+  justify-content: center; /* Center align the items */
+  gap: 0.5rem; /* Space between boxes */
+  margin-top: var(--mb-2); /* Margin at the top */
+}
+
+.project-languages span {
+  background-color: var(--text-color); /* Background color for language boxes */
+  color: var(--main-bg-color); /* Text color in contrast to background */
+  border: 1px solid var(--accent-color); /* Border color for the boxes */
+  border-radius: 0.25rem; /* Slightly rounded corners */
+  padding: 0.5rem 1rem; /* Padding inside the boxes */
+  font-size: 0.9rem; /* Font size for language text */
+  font-weight: 500; /* Medium weight for text */
+  display: inline-block; /* Ensure boxes are inline */
+}
+
+/* GitHub link styling */
+.github-link {
+  color: var(--accent-color); /* Blue color for GitHub link */
+  margin-top: 1rem; /* Top margin */
+  text-decoration: none; /* Remove underline from link */
+  font-size: 1.1rem; /* Slightly larger font size */
+  display: flex;
+  align-items: center; /* Center align icon and text */
+  justify-content: center;
+}
+
+.github-link i {
+  margin-right: 0.5rem; /* Space between icon and text */
+  font-size: 1.5rem; /* Larger icon size */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem; /* Smaller font size for mobile */
+  }
+
+  .section-subtext {
+    font-size: 1rem; /* Smaller font size for mobile */
+  }
+
+  .project-container {
+    grid-template-columns: 1fr; /* Single column layout on mobile */
+  }
+
+  .project-img {
+    height: auto; /* Allow cards to grow with content */
+  }
+  
+  .project-title {
+    font-size: 1.25rem; /* Smaller font size for mobile */
+  }
+
+  .project-description, .project-languages {
+    font-size: 0.9rem; /* Smaller font size for mobile */
+    margin: 0 0.5rem; /* Less margin for mobile */
+  }
+
+  .github-link {
+    font-size: 1rem; /* Smaller font size for mobile */
+  }
+
+  .github-link i {
+    font-size: 1.2rem; /* Smaller icon size for mobile */
+  }
+}
+
+
+
+/* Contact section */
+.contact-section {
+  padding: 60px 20px;
+  background-color: #0A0A0A;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-title {
+  display: inline-block;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #0080FF;
+}
+
+/* Contact section */
+.contact-section {
+  padding: 60px 20px;
+  background-color: #0A0A0A;
+}
+
+.contact-container {
+  max-width: 800px; /* Increased maximum width */
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-title {
+  display: inline-block;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #0080FF;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #0A0A0A; /* Jett black background */
+  padding: 40px; /* Increased padding */
+  border-radius: 12px; /* More rounded corners */
+  box-shadow: 0 0 30px rgba(0, 128, 255, 0.8); /* Larger shadow for prominence */
+  margin: 0 auto; /* Center the form */
+}
+
+.form-container {
+  width: 100%; /* Ensure the form container takes full width */
+  margin-bottom: 20px; /* Space between fields */
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 10px; /* Increased margin for labels */
+  font-weight: bold;
+  color: #0080FF;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 15px; /* Increased padding for fields */
+  border: 1px solid #333;
+  border-radius: 6px; /* More rounded corners for fields */
+  font-size: 1.1em; /* Slightly larger font size */
+  background: #0A0A0A;
+  color: #fff;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+  border-color: #0080FF;
+  outline: none;
+}
+
+/* Adjust the button to be circular and larger */
+.submit-btn {
+  width: 100%; /* Full width to match the message box */
+  padding: 12px; /* Increased padding for better aesthetics */
+  border: none; /* Remove default border */
+  border-radius: 6px; /* More rounded corners */
+  background-color: #0080FF; /* Button color */
+  color: white; /* Text color */
+  font-size: 1.2rem; /* Adjust font size */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition on hover */
+  text-align: center; /* Center text */
+  display: inline-flex; /* Align text within button */
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+}
+
+.submit-btn:hover {
+  background-color: #005bb5; /* Darker color on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Wrapper for all sections */
+.sections-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--mb-4); /* Gap between sections */
+}
+
+.contact-container {
+  margin-bottom: 40px;
+}
+
+.contact-section h2 {
+  position: relative;
+  top: -20px; /* Adjust this value to move the heading up */
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+/* Form label and input styling */
+.form-label {
+  display: block;
+  margin-bottom: 10px; /* Increased margin */
+  font-weight: bold;
+  color: #333;
+}
+
+.form-input, .form-textarea {
+  width: 100%;
+  padding: 15px; /* Increased padding */
+  border-radius: 6px; /* More rounded corners */
+  border: 1px solid #ddd;
+}
+
+.submit-btn {
+  background-color: #0080FF; /* Button color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.submit-btn:hover {
+  background-color: #005bb5; /* Darker color on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow effect */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Active effect */
+.submit-btn:active {
+  background-color: #004a99; /* Even darker color when clicked */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Reduce shadow on click */
+  transform: translateY(1px); /* Slightly lower effect when clicked */
+}
+
+/* General styles for the footer */
+.footer-class {
+  background-color: #0080FF; /* Set the background color of the footer */
+  color: white; /* Set the text color to white */
+  padding: 40px 30px; /* Adjust padding as needed */
+  text-align: center; /* Center the text and icons */
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px; /* Space between content and bottom section */
+}
+
+.footer-title {
+  font-size: 20px; /* Larger font size for emphasis */
+  font-weight: bold; /* Make the text bold */
+  color: #ffffff; /* White text color for contrast */
+  margin-bottom: 20px; /* Space below the title */
+  text-transform: uppercase; /* Uppercase text for a formal look */
+  letter-spacing: 1px; /* Slightly increase letter spacing for readability */
+  font-family: "Poppins", sans-serif; /* Consistent with other font choices */
+}
+
+.footer-nav {
+  margin-bottom: 16px; /* Space between navigation and social icons */
+}
+s
+.footer-nav ul {
+  list-style: none; /* Remove bullets from list */
+  padding: 0;
+}
+
+.footer-nav ul li {
+  display: inline; /* Display list items inline */
+  margin: 0 10px; /* Space between items */
+}
+
+.footer-nav ul li a {
+  color: #ffffff; /* White text color for links */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.footer-nav ul li a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.footer-social {
+  margin-bottom: 20px; /* Space between social icons and footer bottom */
+}
+
+.footer-icon {
+  color: white; /* Set icon color to white */
+  font-size: 24px; /* Adjust icon size as needed */
+  margin: 0 10px; /* Space between icons */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.footer-icon:hover {
+  opacity: 0.8; /* Add hover effect to icons */
+}
+
+.footer-bottom {
+  font-size: 14px; /* Adjust font size as needed */
+  color: white; /* Set text color to white */
+}
+
+.footer-bottom .designer {
+  font-weight: bold; /* Make designer name bold */
+}
+
+
+#copy-email-icon {
+  cursor: pointer;
+  font-size: 1.2rem; /* Adjust size as needed */
+  color: #0080FF; /* Example color */
+  margin-left: 10px;
+}
+
+#copied {
+  display: none; /* Hidden by default */
+  color: white;/* Example color for copied message */
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+#copied.active {
+  display: inline; /* Show when active */
+}
+
+/* Highlight email on hover */
+.highlight-email {
+  background-color: #0A0A0A; /* Example highlight color */
+  transition: background-color 0.3s ease;
+}
