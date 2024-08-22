@@ -337,6 +337,7 @@ section {
 .skills-cards-container {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 2rem;
   gap: 20px; /* Adjust spacing between cards */
 }
 
@@ -397,7 +398,7 @@ section {
 /* Skills Section */
 .skills-section {
   padding: 4rem 1rem; /* Padding around the Skills section */
-  margin-bottom: 8rem; /* Space below the Skills section to match Projects section margin-top */
+  margin-bottom: 4rem; /* Space below the Skills section to match Projects section margin-top */
 }
 
 #projects-title { /* Adjust padding if necessary */
@@ -421,7 +422,8 @@ section {
 }
 
 .section-subtext {
-  text-align: center; /* Center align the subtext */
+  text-align: center; /* Padding around the Skills section */
+  margin-bottom: 4rem; /* Center align the subtext */
   font-size: 1.25rem; /* Larger font size for readability */
   margin-bottom: var(--mb-3); /* Space below the subtext */
 }
