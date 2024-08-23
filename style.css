@@ -561,7 +561,7 @@ section {
   }
   
   .project-title {
-    font-size: 1.25rem; /* Smaller font size for mobile */
+    font-size: 2rem; /* Smaller font size for mobile */
   }
 
   .project-description, .project-languages {
