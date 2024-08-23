@@ -426,6 +426,7 @@ section {
 }
 
 /* Add margin-bottom to create a gap between the section title and project cards */
+/* Project container layout */
 .project-container {
   gap: 2rem; /* Gap between project cards */
   max-width: 1200px; /* Max width for the project container */
@@ -436,6 +437,7 @@ section {
   margin-top: var(--mb-4); /* Gap between the section title and project cards */
 }
 
+/* Project card styling */
 .project-img {
   box-shadow: 0 4px 25px rgba(49, 17, 14, 0.5); /* Larger shadow for depth */
   border-radius: 0.5rem; /* Rounded corners */
@@ -446,6 +448,8 @@ section {
   justify-content: space-between; /* Space between elements */
   height: 100%; /* Full height for cards */
 }
+
+/* Image styling */
 .project-img img {
   transition: transform 0.3s ease; /* Smooth transition for hover effect */
   cursor: pointer;
@@ -455,8 +459,10 @@ section {
 
 .project-img img:hover {
   transform: scale(1.1); /* Larger scale effect on hover */
+  overflow: hidden;
 }
 
+/* Project title styling */
 .project-title {
   color: var(--accent-color); /* Blue color for project titles */
   font-weight: 600; /* Slightly bold */
@@ -467,6 +473,7 @@ section {
   font-size: var(--h2-font-size); /* Font size from CSS variables */
 }
 
+/* Project description styling */
 .project-description {
   margin: 0 1rem; /* Margin for description */
   line-height: 1.6; /* Improve readability */
@@ -482,16 +489,16 @@ section {
   gap: 0.5rem; /* Space between boxes */
   margin-top: var(--mb-2); /* Margin at the top */
   margin-bottom: 1rem; /* Add margin at the bottom */
-  background-color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
-  border: 1px solid #0080FF;
-  color: #0080FF;
+  padding: 0.5rem 1rem; /* Padding around language buttons */
+  border-radius: 0.25rem; /* Rounded corners */
+  border: 1px solid #0080FF; /* Border color */
+  color: #0080FF; /* Text color */
+  background-color: #fff; /* Background color for the container */
 }
 
 /* Individual language box */
 .project-languages span {
-  background-color:#0080FF; /* White background */
+  background-color: #fff; /* White background */
   color: #0080FF; /* Blue text color */
   border: 2px solid #0080FF; /* Blue border */
   border-radius: 0.5rem; /* Rounded corners */
@@ -512,7 +519,7 @@ section {
   transform: scale(1.05); /* Slightly enlarge box on hover */
 }
 
-
+/* GitHub link styling */
 .github-link {
   color: var(--accent-color); /* Blue color for GitHub link */
   margin-top: 1rem; /* Top margin */
@@ -523,6 +530,8 @@ section {
   justify-content: center;
   margin-bottom: 1rem; /* Add margin at the bottom to keep spacing consistent */
 }
+
+/* GitHub icon styling */
 .github-link i {
   margin-right: 0.5rem; /* Space between icon and text */
   font-size: 1.5rem; /* Larger icon size */
