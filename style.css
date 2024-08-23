@@ -755,7 +755,7 @@ section {
 .footer-title {
   font-size: 20px; /* Revert to original font size */
   font-weight: bold; /* Keep the text bold */
-  color: #0A0A0A; /* Dark text color for contrast */
+  color: white; /* Dark text color for contrast */
   margin-bottom: 10px; /* Reduced space below the title */
   text-transform: uppercase; /* Keep uppercase text */
   letter-spacing: 1px; /* Keep letter spacing */
@@ -777,7 +777,7 @@ section {
 }
 
 .footer-nav ul li a {
-  color: #0A0A0A; /* Dark text color for links */
+  color: white; /* Dark text color for links */
   text-decoration: none; /* Remove underline from links */
   font-size: 19.2px; /* Revert to original font size for links */
 }
