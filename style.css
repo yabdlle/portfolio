@@ -401,46 +401,41 @@ section {
   padding: 4rem 1rem; /* Padding around the Skills section */
   margin-bottom: 2rem; /* Space below the Skills section to match Projects section margin-top */
 }
-
-#projects-title { /* Adjust padding if necessary */
-  margin-bottom: 1rem; /* Add margin to create a gap */
-}
-
-
-.project-section {
-  padding: 2rem 1rem; /* Padding around the section */
-  background-color: #0A0A0A; /* Uber black background color */
-  color: var(--text-color); /* Text color */
-
-}
-
 .section-title {
   margin-bottom: var(--mb-4); /* Margin bottom */
   font-size: 2.5rem; /* Larger font size for better visibility */
   text-align: center; /* Center align the section title */
   color: #0080FF;
 }
-
 .section-subtext {
   text-align: center; /* Center align the subtext */
   margin-bottom: var(--mb-3); /* Space below the subtext */
   font-size: 1.25rem; /* Larger font size for readability */
 }
 
-/* Add margin-bottom to create a gap between the section title and project cards */
+.project-title {
+  color: var(--accent-color); /* Blue color for project titles */
+  font-weight: 600; /* Slightly bold */
+  margin-top: auto; /* Pushes the title to the bottom */
+  margin-bottom: var(--mb-2); /* Reduced margin at the bottom */
+  padding: 1rem; /* Padding around the title */
+  text-align: center; /* Center align title */
+  font-size: 1.5rem; /* Font size for titles */
+}
+
+/* Project container styling */
 .project-container {
-  gap: 2rem; /* Reduced gap between project cards */
-  max-width: 1200px; /* Reduced max width for the project container */
+  gap: 2rem;
+  max-width: 1024px;
   display: grid;
-  grid-template-columns: repeat(2, minmax(300px, 1fr)); /* Smaller size for each card */
+  grid-template-columns: repeat(2, minmax(300px, 1fr)); /* 2 columns with responsive min-width */
   width: calc(100% - 2rem); /* Full width minus padding */
-  margin: auto; /* Center the container */
-  margin-top: var(--mb-4); /* Reduced gap between the section title and project cards */
+  margin: auto;
 }
 
 /* Project card styling */
 .project-img {
-  box-shadow: 0 4px 20px rgba(49, 17, 14, 0.5); /* Adjusted shadow for depth */
+  box-shadow: 0 4px 25px rgba(49, 17, 14, 0.5); /* Adjusted shadow for depth */
   border-radius: 0.5rem; /* Rounded corners */
   overflow: hidden; /* Hide overflow */
   background-color: #0A0A0A; /* Dark grey background */
@@ -460,11 +455,11 @@ section {
   height: 60%; /* Fixed height for the image */
   object-fit: cover; /* Ensure image covers the area */
 }
+
+/* Hover effect for images */
 .project-img:hover img {
   transform: scale(1.1); /* Scale up the image */
 }
-
-
 
 /* Project title styling */
 .project-title {
@@ -476,6 +471,7 @@ section {
   text-align: center; /* Center align title */
   font-size: 1.5rem; /* Font size for titles */
 }
+
 /* Project description styling */
 .project-description {
   margin: 0 1rem; /* Margin for description */
@@ -484,6 +480,7 @@ section {
   padding: 0 1rem; /* Padding for better spacing */
   flex-grow: 1; /* Allow description to grow and take up space */
 }
+
 /* Container for language buttons */
 .project-languages {
   display: flex; /* Flexbox for aligning items */
@@ -539,7 +536,6 @@ section {
 /* GitHub icon styling */
 .github-link i {
   margin-right: 0.5rem; /* Space between icon and text */
-  font-size: 1.7rem; /* Smaller icon size */
 }
 
 
@@ -832,3 +828,4 @@ section {
   background-color: #0A0A0A; /* Example highlight color */
   transition: background-color 0.3s ease;
 }
+

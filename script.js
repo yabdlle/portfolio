@@ -160,4 +160,23 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', updateActiveClass);
 });
 
+// Function to enlarge image
+function enlargeImage(img) {
+  // Create a clone of the image to be shown in fullscreen
+  var clone = img.cloneNode();
+  clone.classList.add("fullscreen-image"); // Add the class for styling
+  clone.onclick = closeImage; // Set the onclick event to close the image
 
+  // Get the overlay div and append the cloned image
+  var overlay = document.getElementById("image-overlay");
+  overlay.innerHTML = ''; // Clear any previous content
+  overlay.appendChild(clone);
+  
+  // Show the overlay
+  overlay.style.display = "flex";
+}
+
+// Function to close the full-screen image view
+function closeImage() {
+  document.getElementById("image-overlay").style.display = "none";
+}
