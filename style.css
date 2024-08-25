@@ -343,20 +343,21 @@ section {
 
 /* Individual Skill Card */
 .skills-card {
-    border: 2px solid white;
-    border-radius: 8px;
-    padding: 2rem;
-    background-color: #000;
-    color: #fff;
-    flex: 1 1 calc(33.333% - 20px);
-    box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 2rem;
+  background-color: #000;
+  color: #fff;
+  flex: 1 1 calc(33.333% - 20px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8), 0 8px 25px rgba(0, 128, 255, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skills-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(14, 36, 49, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.9), 0 10px 30px rgba(0, 128, 255, 0.5);
 }
+
 
 .skills-card-title {
     text-align: center;
@@ -398,7 +399,7 @@ section {
 /* Skills Section */
 .skills-section {
   padding: 4rem 1rem; /* Padding around the Skills section */
-  margin-bottom: 4rem; /* Space below the Skills section to match Projects section margin-top */
+  margin-bottom: 2rem; /* Space below the Skills section to match Projects section margin-top */
 }
 
 #projects-title { /* Adjust padding if necessary */
