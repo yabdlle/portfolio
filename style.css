@@ -349,13 +349,13 @@ section {
   background-color: #000;
   color: #fff;
   flex: 1 1 calc(33.333% - 20px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8), 0 8px 25px rgba(0, 128, 255, 0.4);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skills-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.9), 0 10px 30px rgba(0, 128, 255, 0.5);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.9);
 }
 
 
@@ -411,6 +411,7 @@ section {
   padding: 2rem 1rem; /* Padding around the section */
   background-color: #0A0A0A; /* Uber black background color */
   color: var(--text-color); /* Text color */
+
 }
 
 .section-title {
@@ -427,27 +428,27 @@ section {
 }
 
 /* Add margin-bottom to create a gap between the section title and project cards */
-/* Project container layout */
 .project-container {
-  gap: 2rem; /* Gap between project cards */
-  max-width: 1200px; /* Max width for the project container */
+  gap: 2rem; /* Reduced gap between project cards */
+  max-width: 1200px; /* Reduced max width for the project container */
   display: grid;
-  grid-template-columns: repeat(2, minmax(300px, 1fr)); /* Two cards per row */
+  grid-template-columns: repeat(2, minmax(300px, 1fr)); /* Smaller size for each card */
   width: calc(100% - 2rem); /* Full width minus padding */
   margin: auto; /* Center the container */
-  margin-top: var(--mb-4); /* Gap between the section title and project cards */
+  margin-top: var(--mb-4); /* Reduced gap between the section title and project cards */
 }
 
 /* Project card styling */
 .project-img {
-  box-shadow: 0 4px 25px rgba(49, 17, 14, 0.5); /* Larger shadow for depth */
+  box-shadow: 0 4px 20px rgba(49, 17, 14, 0.5); /* Adjusted shadow for depth */
   border-radius: 0.5rem; /* Rounded corners */
   overflow: hidden; /* Hide overflow */
   background-color: #0A0A0A; /* Dark grey background */
   display: flex; /* Flexbox layout */
   flex-direction: column; /* Align items vertically */
-  justify-content: space-between; /* Space between elements */
-  height: 100%; /* Full height for cards */
+  justify-content: flex-end; /* Align items to the bottom */
+  min-height: 800px; /* Minimum height for cards */
+  width: 100%; /* Full width of the container */
 }
 
 /* Image styling */
@@ -455,45 +456,40 @@ section {
   transition: transform 0.3s ease; /* Smooth transition for hover effect */
   cursor: pointer;
   width: 100%; /* Full width */
-  height: auto; /* Maintain aspect ratio */
+  height: 60%; /* Fixed height for the image */
+  object-fit: cover; /* Ensure image covers the area */
 }
 
-.project-img img:hover {
-  transform: scale(1.1); /* Larger scale effect on hover */
-  overflow: hidden;
-}
 
 /* Project title styling */
 .project-title {
   color: var(--accent-color); /* Blue color for project titles */
   font-weight: 600; /* Slightly bold */
   margin-top: auto; /* Pushes the title to the bottom */
-  margin-bottom: var(--mb-2); /* Margin at the bottom */
+  margin-bottom: var(--mb-2); /* Reduced margin at the bottom */
   padding: 1rem; /* Padding around the title */
   text-align: center; /* Center align title */
-  font-size: var(--h2-font-size); /* Font size from CSS variables */
+  font-size: 1.5rem; /* Font size for titles */
 }
-
 /* Project description styling */
 .project-description {
   margin: 0 1rem; /* Margin for description */
   line-height: 1.6; /* Improve readability */
   text-align: center; /* Center align description */
-  display: flex;
-  align-items: center; /* Center content vertically */
-  justify-content: center; /* Center content horizontally */
+  padding: 0 1rem; /* Padding for better spacing */
+  flex-grow: 1; /* Allow description to grow and take up space */
 }
 /* Container for language buttons */
 .project-languages {
   display: flex; /* Flexbox for aligning items */
   flex-wrap: wrap; /* Allow wrapping to new lines */
   justify-content: center; /* Center align the items */
-  gap: 0.5rem; /* Space between boxes */
-  margin-top: var(--mb-2); /* Margin at the top */
-  margin-bottom: 1rem; /* Add margin at the bottom */
-  padding: 0.5rem 1rem; /* Padding around language buttons */
-  border-radius: 0.25rem; /* Rounded corners */
-  border: 1px solid #0080FF; /* Border color */
+  gap: 0.5rem; /* Reduced space between boxes */
+  margin-top: var(--mb-2); /* Reduced margin at the top */
+  margin-bottom: 1rem; /* Reduced margin at the bottom */
+  padding: 0.5rem 1rem; /* Reduced padding around language buttons */
+  border-radius: 0.25rem; /* Less rounded corners */
+  border: 1px solid #0080FF; /* Smaller border */
   color: #0080FF; /* Text color */
   background-color: #0A0A0A; /* Background color for the container */
   text-align: center; /* Center align text */
@@ -503,10 +499,10 @@ section {
 .project-languages span {
   background-color: #0A0A0A; /* Dark grey background */
   color: #0080FF; /* Blue text color */
-  border: 2px solid #0080FF; /* Blue border */
+  border: 1px solid #0080FF; /* Smaller blue border */
   border-radius: 0.5rem; /* Rounded corners */
-  padding: 0.5rem 1rem; /* Padding inside the box */
-  font-size: 0.9rem; /* Font size for text */
+  padding: 0.5rem 1rem; /* Reduced padding inside the box */
+  font-size: 1.1rem; /* Smaller font size for better visibility */
   font-weight: 500; /* Medium weight for text */
   display: inline-flex; /* Flexbox for inline display */
   align-items: center; /* Center align text vertically */
@@ -516,29 +512,29 @@ section {
   text-align: center; /* Ensure text is centered */
 }
 
-
 /* Hover effect for language boxes */
 .project-languages span:hover {
   background-color: #0080FF; /* Blue background on hover */
   color: #ffffff; /* White text color on hover */
   transform: scale(1.05); /* Slightly enlarge box on hover */
 }
+
 /* GitHub link styling */
 .github-link {
   color: var(--accent-color); /* Blue color for GitHub link */
-  margin-top: 1rem; /* Top margin */
+  margin-top: 1rem; /* Reduced top margin */
   text-decoration: none; /* Remove underline from link */
-  font-size: 1.1rem; /* Slightly larger font size */
+  font-size: 1.3rem; /* Smaller font size */
   display: flex;
   align-items: center; /* Center align icon and text */
   justify-content: center;
-  margin-bottom: 1rem; /* Add margin at the bottom to keep spacing consistent */
+  margin-bottom: 1rem; /* Reduced bottom margin */
 }
 
 /* GitHub icon styling */
 .github-link i {
   margin-right: 0.5rem; /* Space between icon and text */
-  font-size: 1.5rem; /* Larger icon size */
+  font-size: 1.7rem; /* Smaller icon size */
 }
 
 
