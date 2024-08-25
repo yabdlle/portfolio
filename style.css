@@ -283,26 +283,25 @@ section {
 }
 
 .logo-btn {
+  background: #0A0A0A; /* Match btn-color-1 and 2 background */
+  border: gray 0.1rem solid; /* Match border style */
   font-weight: 600;
   transition: all 300ms ease;
   padding: 1rem 2rem; /* Adjusted padding */
-  width: 12rem; /* Increased width */
-  border-radius: 0.75rem; /* Rounded corners */
-  color: w; /* Text color */
-  background-color: #ffffff; /* White background color */
+  width: 8rem; /* Increased width */
+  border-radius: 2rem; /* More rounded corners */
+  color: white; /* Text color */
   font-size: 16px; /* Font size */
   text-align: center; /* Center align text */
   display: inline-block; /* Ensure it respects padding and width */
   cursor: pointer; /* Pointer cursor on hover */
-  border: 2px solid  gray; /* White border */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
-/* Hover effect */
 .logo-btn:hover {
-  background-color: #0080FF; /* Blue background on hover */
-  color: #ffffff; /* White text color on hover */
-  transform: scale(1.05); /* Slightly enlarge on hover */
+  background: rgb(0, 0, 0); /* Match hover background */
+  color: #0080FF; /* Match hover color */
+  transform: translateY(-5px); /* Match hover transform */
 }
 
 
