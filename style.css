@@ -432,6 +432,7 @@ section {
   grid-template-columns: repeat(2, minmax(300px, 1fr)); /* 2 columns with responsive min-width */
   width: calc(100% - 2rem); /* Full width minus padding */
   margin: auto;
+  margin-top: 5rem;
 }
 
 
