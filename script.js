@@ -161,22 +161,31 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Function to enlarge image
-function enlargeImage(img) {
-  // Create a clone of the image to be shown in fullscreen
-  var clone = img.cloneNode();
-  clone.classList.add("fullscreen-image"); // Add the class for styling
-  clone.onclick = closeImage; // Set the onclick event to close the image
-
-  // Get the overlay div and append the cloned image
+function enlargeImage(image) {
   var overlay = document.getElementById("image-overlay");
-  overlay.innerHTML = ''; // Clear any previous content
-  overlay.appendChild(clone);
-  
-  // Show the overlay
-  overlay.style.display = "flex";
+  var enlargedImage = document.createElement("img");
+
+  enlargedImage.src = image.src;
+  enlargedImage.className = "fullscreen-image";
+
+  // Set the image's initial position to match its original position on the page
+  enlargedImage.style.top = image.getBoundingClientRect().top + "px";
+  enlargedImage.style.left = image.getBoundingClientRect().left + "px";
+  enlargedImage.style.width = image.offsetWidth + "px";
+  enlargedImage.style.height = image.offsetHeight + "px";
+
+  // Append the enlarged image to the overlay
+  overlay.innerHTML = "";
+  overlay.appendChild(enlargedImage);
+  overlay.style.display = "block"; // Show the overlay
+
+  // After a short delay, scale the image to the desired size
+  setTimeout(function () {
+    enlargedImage.style.transform = "translate(-50%, -50%) scale(1.2)";
+  }, 10); // Slight delay for the smooth transition effect
 }
 
-// Function to close the full-screen image view
 function closeImage() {
-  document.getElementById("image-overlay").style.display = "none";
+  var overlay = document.getElementById("image-overlay");
+  overlay.style.display = "none"; // Hide overlay
 }

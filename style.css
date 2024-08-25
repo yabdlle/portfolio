@@ -413,6 +413,7 @@ section {
   font-size: 1.25rem; /* Larger font size for readability */
 }
 
+
 .project-title {
   color: var(--accent-color); /* Blue color for project titles */
   font-weight: 600; /* Slightly bold */
@@ -433,7 +434,7 @@ section {
   margin: auto;
 }
 
-/* Project card styling */
+
 /* Container for each project */
 .project-img {
   box-shadow: 0 4px 25px rgba(49, 17, 14, 0.5);
@@ -458,7 +459,7 @@ section {
 }
 
 .project-img img:hover {
-  transform: scale(1.1); /* Slightly zoom in on hover */
+  transform: scale(1.05); /* Slightly reduce the zoom effect */
 }
 
 /* Target the title for the Pantry Inventory Tracker project specifically */
@@ -528,7 +529,7 @@ section {
 
 /* GitHub link styling */
 .github-link {
-  color: var(--accent-color); /* Blue color for GitHub link */
+  color:  white;
   margin-top: 1rem; /* Reduced top margin */
   text-decoration: none; /* Remove underline from link */
   font-size: 1.3rem; /* Smaller font size */
@@ -757,7 +758,7 @@ section {
 .footer-title {
   font-size: 20px; /* Revert to original font size */
   font-weight: bold; /* Keep the text bold */
-  color: #0A0A0A; /* Dark text color for contrast */
+  color: white; /* Dark text color for contrast */
   margin-bottom: 10px; /* Reduced space below the title */
   text-transform: uppercase; /* Keep uppercase text */
   letter-spacing: 1px; /* Keep letter spacing */
@@ -779,7 +780,7 @@ section {
 }
 
 .footer-nav ul li a {
-  color: #0A0A0A; /* Dark text color for links */
+  color: white; /* Dark text color for links */
   text-decoration: none; /* Remove underline from links */
   font-size: 19.2px; /* Revert to original font size for links */
 }
