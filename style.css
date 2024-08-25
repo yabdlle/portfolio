@@ -286,7 +286,7 @@ section {
   font-weight: 600;
   transition: all 300ms ease;
   padding: 1rem;
-  width: 10rem; /* Increased width for consistency */
+  width: 9rem; /* Increased width for consistency */
   border-radius: 2rem; /* Rounded corners */
   color: white; /* Text color */
   background-color: #0A0A0A;
