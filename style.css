@@ -113,30 +113,30 @@ a:hover {
   flex-direction: column;
   align-items: center;
   position: fixed;
-  top: 50%; /* Center vertically */
+  top: 50%;
   left: 20px;
-  transform: translateY(-40%);
+  transform: translateY(-50%);
   z-index: 10;
-  margin-bottom: 20px; /* Ensure space below the nav */
 }
 
-/* Navigation Circles */
 .nav-circle {
+  display: block;
   width: 20px;
   height: 20px;
-  background-color: #ccc; /* Light grey color */
+  margin-bottom: 10px;
+  background-color: #ccc; /* Light grey color, change as needed */
   border-radius: 50%;
   transition: background-color 0.3s;
   outline: none;
-  margin-bottom: 10px; /* Space between circles, adjust as needed */
 }
+
 .nav-circle:hover {
   background-color: #0080FF; /* Highlight color on hover */
 }
 
 /* Style for the active section indicator with a border */
 .nav-circle.active {
-  background-color: #2fcff4; /* Active section color */
+  background-color: #0080FF; /* Active section color */
   position: relative; /* For pseudo-element positioning */
 }
 

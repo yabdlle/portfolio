@@ -113,4 +113,51 @@ sr.reveal(".skills-data", { interval: 100 });
 /*SCROLL projects*/
 sr.reveal(".project-img", { interval: 400 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const navCircles = document.querySelectorAll('.nav-circle');
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('.nav-links a');
+
+  function getOffset(element) {
+    let offset = 0;
+    while (element) {
+      offset += element.offsetTop;
+      element = element.offsetParent;
+    }
+    return offset;
+  }
+
+  function updateActiveClass() {
+    let currentSection = '';
+
+    // Determine the currently visible section
+    sections.forEach(section => {
+      const sectionTop = getOffset(section);
+      const sectionHeight = section.clientHeight;
+      if (window.scrollY + window.innerHeight / 2 >= sectionTop &&
+          window.scrollY + window.innerHeight / 2 <= sectionTop + sectionHeight) {
+        currentSection = section.getAttribute('id');
+      }
+    });
+
+    // Update the navigation links
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href').includes(currentSection)) {
+        link.classList.add('active');
+      }
+    });
+
+    // Update the navigation circles
+    navCircles.forEach(circle => {
+      circle.classList.remove('active');
+      if (circle.getAttribute('href').includes(currentSection)) {
+        circle.classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', updateActiveClass);
+});
+
 
