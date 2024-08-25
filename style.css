@@ -288,6 +288,13 @@ section {
 }
 
 
+.about2-text {
+  font-size: 1.5rem; /* Adjust font size */
+  font-weight: bold; /* Make text bold */
+  color: #0080FF; /* Blue color for the header */
+  text-align: center; /* Center align the text */
+  margin-bottom: 0.5rem; /* Space below the header */
+}
 
 
 .card {
