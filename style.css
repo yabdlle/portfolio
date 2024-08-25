@@ -456,6 +456,7 @@ section {
   object-fit: cover; /* Ensure the image covers the container area */
   transition: transform 0.3s ease; /* Smooth transition for hover effect */
   cursor: pointer; /* Pointer cursor for clickable images */
+  border-radius: 10px;
 }
 
 .project-img img:hover {
