@@ -160,32 +160,4 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', updateActiveClass);
 });
 
-// Function to enlarge image
-function enlargeImage(image) {
-  var overlay = document.getElementById("image-overlay");
-  var enlargedImage = document.createElement("img");
 
-  enlargedImage.src = image.src;
-  enlargedImage.className = "fullscreen-image";
-
-  // Set the image's initial position to match its original position on the page
-  enlargedImage.style.top = image.getBoundingClientRect().top + "px";
-  enlargedImage.style.left = image.getBoundingClientRect().left + "px";
-  enlargedImage.style.width = image.offsetWidth + "px";
-  enlargedImage.style.height = image.offsetHeight + "px";
-
-  // Append the enlarged image to the overlay
-  overlay.innerHTML = "";
-  overlay.appendChild(enlargedImage);
-  overlay.style.display = "block"; // Show the overlay
-
-  // After a short delay, scale the image to the desired size
-  setTimeout(function () {
-    enlargedImage.style.transform = "translate(-50%, -50%) scale(1.2)";
-  }, 10); // Slight delay for the smooth transition effect
-}
-
-function closeImage() {
-  var overlay = document.getElementById("image-overlay");
-  overlay.style.display = "none"; // Hide overlay
-}

@@ -285,24 +285,24 @@ section {
 .logo-btn {
   font-weight: 600;
   transition: all 300ms ease;
-  padding: 1rem;
-  width: 9rem; /* Increased width for consistency */
-  border-radius: 2rem; /* Rounded corners */
-  color: white; /* Text color */
-  background-color: #0A0A0A;
+  padding: 1rem 2rem; /* Adjusted padding */
+  width: 12rem; /* Increased width */
+  border-radius: 0.75rem; /* Rounded corners */
+  color: w; /* Text color */
+  background-color: #ffffff; /* White background color */
   font-size: 16px; /* Font size */
   text-align: center; /* Center align text */
   display: inline-block; /* Ensure it respects padding and width */
   cursor: pointer; /* Pointer cursor on hover */
-  border: 2px solid gray; /* Gray border */
+  border: 2px solid  gray; /* White border */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
 /* Hover effect */
 .logo-btn:hover {
-  background: rgb(0, 0, 0);
-  color: #0080FF;
-  transform: translateY(-5px);
+  background-color: #0080FF; /* Blue background on hover */
+  color: #ffffff; /* White text color on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 
@@ -376,6 +376,7 @@ section {
 
 /* Individual Skill Card */
 .skills-card {
+  margin-bottom: -4rem;
   border: 2px solid white;
   border-radius: 8px;
   padding: 2rem;
@@ -482,10 +483,14 @@ section {
   height: 100%; /* Full height to fit within grid cells */
 }
 
+.project-section {
+  margin-top: 5rem; /* Ensure this matches other sections */
+}
+
 
 /* Styling for images within project cards */
 .project-img img {
-  width: 100%; /* Ensure image takes full width of the container */
+  width: 95%;/* Ensure image takes full width of the container */
   height: auto; /* Maintain aspect ratio of the image */
   object-fit: cover; /* Ensure the image covers the container area */
   transition: transform 0.3s ease; /* Smooth transition for hover effect */
