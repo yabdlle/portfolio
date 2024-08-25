@@ -130,6 +130,9 @@ a:hover {
   outline: none;
 }
 
+#id{
+  margin-bottom: 2rem;
+}
 .nav-circle:hover {
   background-color: #0080FF; /* Highlight color on hover */
 }
