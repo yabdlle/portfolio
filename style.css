@@ -426,7 +426,7 @@ section {
 /* Project container styling */
 .project-container {
   gap: 2rem;
-  max-width: 1024px;
+  max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(2, minmax(300px, 1fr)); /* 2 columns with responsive min-width */
   width: calc(100% - 2rem); /* Full width minus padding */
@@ -434,31 +434,36 @@ section {
 }
 
 /* Project card styling */
+/* Container for each project */
 .project-img {
-  box-shadow: 0 4px 25px rgba(49, 17, 14, 0.5); /* Adjusted shadow for depth */
-  border-radius: 0.5rem; /* Rounded corners */
-  overflow: hidden; /* Hide overflow */
+  box-shadow: 0 4px 25px rgba(49, 17, 14, 0.5);
+  border-radius: 0.5rem;
+  overflow: hidden; /* Ensure overflow is hidden */
   background-color: #0A0A0A; /* Dark grey background */
-  display: flex; /* Flexbox layout */
-  flex-direction: column; /* Align items vertically */
-  justify-content: flex-end; /* Align items to the bottom */
-  min-height: 800px; /* Minimum height for cards */
-  position: relative; /* Ensure it's positioned correctly */
+  display: flex; /* Flexbox layout to handle image and text */
+  flex-direction: column; /* Arrange child elements vertically */
+  justify-content: flex-end; /* Align content to the bottom */
   width: 100%; /* Full width of the container */
+  height: 100%; /* Full height to fit within grid cells */
 }
 
-/* Image styling */
+
+/* Styling for images within project cards */
 .project-img img {
+  width: 100%; /* Ensure image takes full width of the container */
+  height: auto; /* Maintain aspect ratio of the image */
+  object-fit: cover; /* Ensure the image covers the container area */
   transition: transform 0.3s ease; /* Smooth transition for hover effect */
-  cursor: pointer;
-  width: 100%; /* Full width */
-  height: 60%; /* Fixed height for the image */
-  object-fit: cover; /* Ensure image covers the area */
+  cursor: pointer; /* Pointer cursor for clickable images */
 }
 
-/* Hover effect for images */
-.project-img:hover img {
-  transform: scale(1.1); /* Scale up the image */
+.project-img img:hover {
+  transform: scale(1.1); /* Slightly zoom in on hover */
+}
+
+/* Target the title for the Pantry Inventory Tracker project specifically */
+.project-container .project-img:nth-child(2) .project-title {
+  margin-top: 1.5rem; /* Adjust this value to push the title down */
 }
 
 /* Project title styling */
