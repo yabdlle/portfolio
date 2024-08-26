@@ -287,15 +287,14 @@ section {
   border: gray 0.1rem solid; /* Match border style */
   font-weight: 600;
   transition: all 300ms ease;
-  padding: 1rem 2rem; /* Adjusted padding */
+  padding: 1rem; /* Adjusted padding */
   width: 8rem; /* Increased width */
   border-radius: 2rem; /* More rounded corners */
   color: white; /* Text color */
-  font-size: 16px; /* Font size */
+  font-size: 14px; /* Font size */
   text-align: center; /* Center align text */
   display: inline-block; /* Ensure it respects padding and width */
   cursor: pointer; /* Pointer cursor on hover */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
 .logo-btn:hover {
@@ -460,12 +459,12 @@ section {
 /* Project container styling */
 .project-container {
   gap: 2rem;
-  max-width: 1200px;
+  max-width: 1300px;
   display: grid;
   grid-template-columns: repeat(2, minmax(300px, 1fr)); /* 2 columns with responsive min-width */
   width: calc(100% - 2rem); /* Full width minus padding */
   margin: auto;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 
@@ -508,10 +507,9 @@ section {
 
 /* Project title styling */
 .project-title {
-  color: var(--accent-color); /* Blue color for project titles */
+  color:  #0080FF; /* Blue color for project titles */
   font-weight: 600; /* Slightly bold */
-  margin-top: auto; /* Pushes the title to the bottom */
-  margin-bottom: var(--mb-2); /* Reduced margin at the bottom */
+  margin-top: auto; /* Pushes the title to the bottom */ /* Reduced margin at the bottom */
   padding: 1rem; /* Padding around the title */
   text-align: center; /* Center align title */
   font-size: 1.5rem; /* Font size for titles */
@@ -523,10 +521,12 @@ section {
   line-height: 1.6; /* Improve readability */
   text-align: center; /* Center align description */
   padding: 0 1rem; /* Padding for better spacing */
+  margin-bottom: 1rem;
   flex-grow: 1; /* Allow description to grow and take up space */
 }
 
 /* Container for language buttons */
+/* Container for language boxes */
 .project-languages {
   display: flex; /* Flexbox for aligning items */
   flex-wrap: wrap; /* Allow wrapping to new lines */
@@ -534,9 +534,9 @@ section {
   gap: 0.5rem; /* Reduced space between boxes */
   margin-top: var(--mb-2); /* Reduced margin at the top */
   margin-bottom: 1rem; /* Reduced margin at the bottom */
-  padding: 0.5rem 1rem; /* Reduced padding around language buttons */
+  padding: 0.5rem 1rem; /* Padding around language buttons */
   border-radius: 0.25rem; /* Less rounded corners */
-  border: 1px solid #0080FF; /* Smaller border */
+  border: 1px solid #0080FF; /* Border */
   color: #0080FF; /* Text color */
   background-color: #0A0A0A; /* Background color for the container */
   text-align: center; /* Center align text */
@@ -546,10 +546,10 @@ section {
 .project-languages span {
   background-color: #0A0A0A; /* Dark grey background */
   color: #0080FF; /* Blue text color */
-  border: 1px solid #0080FF; /* Smaller blue border */
+  border: 1px solid #0080FF; /* Blue border */
   border-radius: 0.5rem; /* Rounded corners */
-  padding: 0.5rem 1rem; /* Reduced padding inside the box */
-  font-size: 1.1rem; /* Smaller font size for better visibility */
+  padding: 0.3rem 0.5rem; /* Adjusted padding inside the box */
+  font-size: 1.1rem; /* Font size for visibility */
   font-weight: 500; /* Medium weight for text */
   display: inline-flex; /* Flexbox for inline display */
   align-items: center; /* Center align text vertically */
@@ -557,6 +557,8 @@ section {
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
   cursor: pointer; /* Pointer cursor on hover */
   text-align: center; /* Ensure text is centered */
+  max-width: 6rem; /* Limit the width of language boxes */
+  width: 100%; /* Make width responsive */
 }
 
 /* Hover effect for language boxes */
