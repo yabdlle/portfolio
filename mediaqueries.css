@@ -115,5 +115,8 @@
   .github-link i {
     font-size: 1.2rem; /* Smaller icon size for mobile */
   }
+  .project-languages{
+    padding-bottom: 2px;
+  }
 }
 }
