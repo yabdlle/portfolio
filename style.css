@@ -518,7 +518,8 @@ section {
 /* Project description styling */
 .project-description {
   margin: 0 1rem; /* Margin for description */
-  line-height: 1.6; /* Improve readability */
+  line-height: 1.6;
+  color: white; /* Improve readability */
   text-align: center; /* Center align description */
   padding: 0 1rem; /* Padding for better spacing */
   margin-bottom: 1rem;
