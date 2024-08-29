@@ -592,7 +592,7 @@ section {
   border-radius: 12px;
   object-fit: contain;
   max-width: 50%; /* Takes up most of the screen width */
-  max-height: 50%; /* And most of the screen height */ /* Optional: adds a shadow to make it pop out */
+  max-height: 50%; /* And most of the screen height */
   cursor: pointer; /* Change cursor to indicate it can be closed */
 }
 /* Mobile Styles */
