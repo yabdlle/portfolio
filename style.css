@@ -410,7 +410,7 @@ section {
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-    background: #000;
+    background:  #0A0A0A;
     color: #fff;
     width: 100px;
     border-radius: 5px;
@@ -446,144 +446,108 @@ section {
 }
 
 
-.project-title {
-  color: var(--accent-color); /* Blue color for project titles */
-  font-weight: 600; /* Slightly bold */
-  margin-top: auto; /* Pushes the title to the bottom */
-  margin-bottom: var(--mb-2); /* Reduced margin at the bottom */
-  padding: 1rem; /* Padding around the title */
-  text-align: center; /* Center align title */
-  font-size: 1.5rem; /* Font size for titles */
-}
-
-/* Project container styling */
+/* Project Container */
 .project-container {
-  gap: 2rem;
-  max-width: 1300px;
   display: grid;
-  grid-template-columns: repeat(2, minmax(300px, 1fr)); /* 2 columns with responsive min-width */
-  width: calc(100% - 2rem); /* Full width minus padding */
-  margin: auto;
-  margin-top: 2rem;
+  grid-template-columns: repeat(2, 1fr); /* Two columns, each taking equal space */
+  gap: 2rem; /* Space between grid items */
+  max-width: 1300px; /* Max-width for the grid container */
+  margin: 0 auto; /* Center the grid container */
+  padding: 1rem; /* Padding around the grid container */
 }
 
-
-/* Container for each project */
-.project-img {
-  box-shadow: 0 4px 25px rgba(49, 17, 14, 0.5);
-  border-radius: 0.5rem;
-  overflow: hidden; /* Ensure overflow is hidden */
-  background-color: #0A0A0A; /* Dark grey background */
-  display: flex; /* Flexbox layout to handle image and text */
-  flex-direction: column; /* Arrange child elements vertically */
-  justify-content: flex-end; /* Align content to the bottom */
-  width: 100%; /* Full width of the container */
-  height: 100%; /* Full height to fit within grid cells */
+/* Card Styling */
+.project-card {
+  max-width: 1200px;
+  background-color: #0A0A0A; /* Darker background color for the cards */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Ensures that content doesn't overflow the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  transition: transform 0.3s ease-in-out; /* Smooth scaling effect on hover */
 }
 
-.project-section {
-  margin-top: 5rem; /* Ensure this matches other sections */
+.project-card:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
-
-/* Styling for images within project cards */
-.project-img img {
-  width: 100%;;/* Ensure image takes full width of the container */
-  height: auto; /* Maintain aspect ratio of the image */
-  object-fit: cover; /* Ensure the image covers the container area */
-  transition: transform 0.3s ease; /* Smooth transition for hover effect */
-  cursor: pointer; /* Pointer cursor for clickable images */
-  border-radius: 10px;
+/* Project Image */
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px; /* Adjust the value to control the roundness of the corners */
+  object-fit: cover; /* Ensures the image covers the container without distortion */
 }
 
-.project-img img:hover {
-  transform: scale(1.05); /* Slightly reduce the zoom effect */
+/* Project Info */
+.project-info {
+  padding: 1rem; /* Padding inside the card */
 }
 
-/* Target the title for the Pantry Inventory Tracker project specifically */
-.project-container .project-img:nth-child(2) .project-title {
-  margin-top: 1.5rem; /* Adjust this value to push the title down */
-}
-
-/* Project title styling */
 .project-title {
-  color:  #0080FF; /* Blue color for project titles */
-  font-weight: 600; /* Slightly bold */
-  margin-top: auto; /* Pushes the title to the bottom */ /* Reduced margin at the bottom */
-  padding: 1rem; /* Padding around the title */
-  text-align: center; /* Center align title */
-  font-size: 1.5rem; /* Font size for titles */
+  font-size: 24px; /* Title font size */
+  font-weight: bold;
+  text-align: center; /* Center the title text */
+  margin: 0;
+  color: #0080FF; /* Accent color for titles */
 }
 
-/* Project description styling */
-.project-description {
-  margin: 0 1rem; /* Margin for description */
-  line-height: 1.6;
-  color: white; /* Improve readability */
-  text-align: center; /* Center align description */
-  padding: 0 1rem; /* Padding for better spacing */
-  margin-bottom: 1rem;
-  flex-grow: 1; /* Allow description to grow and take up space */
+.project-subtitle {
+  margin: 1rem 0; /* Increased margin to create more space above and below the subtitle */
+  text-align: center; /* Center the subtitle text */
+  font-size: 16px; /* Subtitle font size */
+  color: #ccc; /* Lighter color for subtitles */
 }
 
-/* Container for language buttons */
-/* Container for language boxes */
-.project-languages {
-  display: flex; /* Flexbox for aligning items */
-  flex-wrap: wrap; /* Allow wrapping to new lines */
-  justify-content: center; /* Center align the items */
-  gap: 0.5rem; /* Reduced space between boxes */
-  margin-top: var(--mb-2); /* Reduced margin at the top */
-  margin-bottom: 1rem; /* Reduced margin at the bottom */
-  padding: 0.5rem 1rem; /* Padding around language buttons */
-  border-radius: 0.25rem; /* Less rounded corners */
-  border: 1px solid #0080FF; /* Border */
-  color: #0080FF; /* Text color */
-  background-color: #0A0A0A; /* Background color for the container */
-  text-align: center; /* Center align text */
+/* Language Buttons */
+.language-buttons {
+  margin: 1rem 0; /* Space between subtitle and buttons */
+  display: flex; /* Flexbox to arrange buttons */
+  flex-wrap: wrap; /* Allow buttons to wrap onto the next line */
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 0.5rem; /* Space between buttons */
 }
 
-/* Individual language box */
-.project-languages span {
-  background-color: #0A0A0A; /* Dark grey background */
-  color: #0080FF; /* Blue text color */
-  border: 1px solid #0080FF; /* Blue border */
-  border-radius: 0.5rem; /* Rounded corners */
-  padding: 0.3rem 0.5rem; /* Adjusted padding inside the box */
-  font-size: 1.1rem; /* Font size for visibility */
-  font-weight: 500; /* Medium weight for text */
-  display: inline-flex; /* Flexbox for inline display */
-  align-items: center; /* Center align text vertically */
-  justify-content: center; /* Center align text horizontally */
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
-  cursor: pointer; /* Pointer cursor on hover */
-  text-align: center; /* Ensure text is centered */
-  max-width: 6rem; /* Limit the width of language boxes */
-  width: 100%; /* Make width responsive */
+.language-buttons .language-button {
+  background-color: #0A0A0A; /* Button background color */
+  color: #0080FF; /* Button text color */
+  padding: 0.25rem 0.75rem; /* Padding for buttons */
+  border-radius: 12px; /* Increased rounded corners */
+  text-decoration: none; /* Remove underline from links */
+  font-size: 14px; /* Smaller font size for buttons */
+  display: inline-block; /* Ensure buttons display inline */
+  border: 2px solid #0080FF; /* Border color matching the button background */
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition for background and border color */
 }
 
-/* Hover effect for language boxes */
-.project-languages span:hover {
-  background-color: #0080FF; /* Blue background on hover */
-  color: #ffffff; /* White text color on hover */
-  transform: scale(1.05); /* Slightly enlarge box on hover */
+.language-buttons .language-button:hover {
+  transform: scale(1.05);
 }
 
-/* GitHub link styling */
+
+/* GitHub Link */
 .github-link {
-  color:  white;
-  margin-top: 1rem; /* Reduced top margin */
-  text-decoration: none; /* Remove underline from link */
-  font-size: 1.3rem; /* Smaller font size */
   display: flex;
-  align-items: center; /* Center align icon and text */
   justify-content: center;
-  margin-bottom: 1rem; /* Reduced bottom margin */
+  align-items: center;
+  margin-top: 1rem; /* Increased margin to create more space above the GitHub link */
+  text-decoration: none;
+  color: #0080FF; /* Default color for GitHub link */
+  font-size: 20.8px; /* Font size for GitHub link */
+  background-color: #0A0A0A; /* Background color to match the dark theme */
+  border: 2px solid #0080FF; /* Blue border color */
+  border-radius: 4px; /* Rounded corners for the border */
+  padding: 0.5rem 1rem; /* Padding inside the link */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition effects */
 }
 
-/* GitHub icon styling */
+.github-link:hover {
+  background-color: #0080FF; /* Blue background color on hover */
+  color: white; /* Ensure text color remains white on hover */
+  border-color: #0080FF; /* Ensure border color matches the background on hover */
+}
+
 .github-link i {
-  margin-right: 0.5rem; /* Space between icon and text */
+  margin-right: 0.5rem; /* Add space after the GitHub icon */
 }
 
 
@@ -606,6 +570,7 @@ section {
   }
   
   .project-title {
+    color: #0080FF;
     font-size: 1.25rem; /* Smaller font size for mobile */
   }
 

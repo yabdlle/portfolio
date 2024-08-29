@@ -168,22 +168,24 @@
 
 
     <section class="project-section" id="projects">
-      <!-- Overlay for the full-screen image view -->
-      
       <h2 class="section-title" style="margin-bottom: 1rem">Projects</h2>
-      
       <p class="section-subtext" style="margin-bottom: 3rem;">Here are some personal projects I've worked on to expand my knowledge and automate everyday tasks!</p>
       
       <div class="project-container">
         <!-- HeadStart AI Project -->
-        <div class="project-img">
-          <img src="./assets/ai.png" alt="HeadStart AI" class="fullscreen-image" onclick="enlargeImage(this)">
+        <div class="project-card">
+          <img src="./assets/ai.png" alt="HeadStart AI" class="project-image" onclick="enlargeImage(this)">
           <div class="project-info">
             <p class="project-title">HeadStart AI</p>
-            <div class="project-description">
-              Developed an AI-powered interview assistant chatbot using React.js, Next.js, and Meta LLama API, providing efficient, context-aware responses to inquiries. Designed a user-friendly interface, delivering consistent, high-quality answers, improving the overall interview preparation experience
+            <p class="project-subtitle">
+              Developed an AI-powered interview assistant chatbot using React.js, Next.js, and Meta LLama API, providing efficient, context-aware responses to inquiries. Designed a user-friendly interface, delivering consistent, high-quality answers, improving the overall interview preparation experience.
+            </p>
+            <div class="language-buttons">
+              <a href="#" class="language-button">JavaScript</a>
+              <a href="#" class="language-button">React.js</a>
+              <a href="#" class="language-button">Meta Llama 3.1 API</a>
+              <a href="#" class="language-button">Next.js</a>
             </div>
-            <div class="project-languages">JavaScript, React.js, Meta Llama 3.1 API, Next.js</div>
             <a href="https://github.com/yabdlle/AI-Chatbot" class="github-link" target="_blank">
               <i class="fab fa-github"></i> GitHub
             </a>
@@ -191,14 +193,19 @@
         </div>
     
         <!-- Internship Aggregator Tool -->
-        <div class="project-img">
-          <img src="./assets/cordiajobs.png" alt="Internship Aggregator Tool" class="fullscreen-image" style="margin-bottom: -1.5rem;"">
+        <div class="project-card">
+          <img src="./assets/cordiajobs.png" alt="Internship Aggregator Tool" class="project-image" onclick="enlargeImage(this)">
           <div class="project-info">
-            <p class="project-title">Internship Aggregator Tool</p>
-            <div class="project-description" style="margin-top: 0.5px;">
+            <p class="project-title">Internship Aggregator</p>
+            <p class="project-subtitle">
               Developed a web scraping tool with BeautifulSoup and pandas to gather detailed internship data, including company, role, location, and posting date, displayed in a structured table. Integrated a Discord bot for real-time updates and notifications on new postings, featuring interactive commands for filtering and exploring opportunities.
+            </p>
+            <div class="language-buttons">
+              <a href="#" class="language-button">Python</a>
+              <a href="#" class="language-button">Flask</a>
+              <a href="#" class="language-button">BeautifulSoup</a>
+              <a href="#" class="language-button">pandas</a>
             </div>
-            <div class="project-languages">Python, Flask, BeautifulSoup, pandas</div>
             <a href="https://github.com/yabdlle/job-bot" class="github-link" target="_blank">
               <i class="fab fa-github"></i> GitHub
             </a>
@@ -206,14 +213,16 @@
         </div>
     
         <!-- Minesweeper Project -->
-        <div class="project-img">
-          <img src="./assets/sweeper.png" alt="Minesweeper" class="fullscreen-image" onclick="enlargeImage(this)">
+        <div class="project-card">
+          <img src="./assets/sweeper.png" alt="Minesweeper" class="project-image" onclick="enlargeImage(this)">
           <div class="project-info">
             <p class="project-title">Minesweeper</p>
-            <div class="project-description">
+            <p class="project-subtitle">
               Created a Minesweeper game, implementing key mechanics using Stacks and Queues, such as mine placement, flagging, and cell revealing. Integrated JUnit testing procedures for code reliability and designed an interactive UI with fluid colors and animations for an engaging player experience.
+            </p>
+            <div class="language-buttons">
+              <a href="#" class="language-button">Java</a>
             </div>
-            <div class="project-languages">Java</div>
             <a href="https://github.com/yabdlle/Undergrad/tree/main/Java%20Projects/minesweeper" class="github-link" target="_blank">
               <i class="fab fa-github"></i> GitHub
             </a>
@@ -221,24 +230,25 @@
         </div>
     
         <!-- Spell Checker Project -->
-        <div class="project-img">
-          <img src="./assets/image2.png" alt="Spell Checker" class="fullscreen-image" onclick="enlargeImage(this)">
+        <div class="project-card">
+          <img src="./assets/image2.png" alt="Spell Checker" class="project-image" onclick="enlargeImage(this)">
           <div class="project-info">
             <p class="project-title">Spell Checker</p>
-            <div class="project-description">
+            <p class="project-subtitle">
               Developed a C-based spell checker using a hash table and dynamic memory management, optimized with malloc and free, and included a command-line interface for dictionary manipulation and text file spell checking, streamlined with a Makefile for efficient compilation and automated testing.
+            </p>
+            <div class="language-buttons">
+              <a href="#" class="language-button">C</a>
             </div>
-            <div class="project-languages">C</div>
             <a href="https://github.com/yabdlle/Undergrad/tree/main/C%20Projects" class="github-link" target="_blank">
               <i class="fab fa-github"></i> GitHub
             </a>
           </div>
         </div>
-    
       </div>
     </section>
     
-
+    
 
     <section class="contact-section" id="contact">
       <div class="contact-container">
