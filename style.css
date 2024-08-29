@@ -525,6 +525,9 @@ section {
   justify-content: center; /* Center the buttons horizontally */
   align-items: center; /* Vertically center buttons */
   gap: 0.5rem; /* Space between buttons */
+  pointer-events: none;
+  
+  
 }
 
 .language-buttons .language-button {
