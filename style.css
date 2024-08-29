@@ -473,7 +473,7 @@ section {
 
 /* Scale effect on hover */
 .project-card:hover {
-  transform: scale(1.1); /* Increase scale for a more pronounced hover effect */
+  transform: scale(1.05); /* Increase scale for a more pronounced hover effect */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5), inset 0 0 8px rgba(255, 255, 255, 0.2); /* Enhanced shadow for hover effect */
 }
 
