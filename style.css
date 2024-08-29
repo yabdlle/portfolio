@@ -446,7 +446,6 @@ section {
 }
 
 
-/* Project Container */
 .project-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Two columns, each taking equal space */
