@@ -588,8 +588,8 @@ section {
 /* Class to be added to the image for full-screen view */
 .fullscreen-image {
   object-fit: contain;
-  max-width: 80%; /* Takes up most of the screen width */
-  max-height: 80%; /* And most of the screen height */
+  max-width: 50%; /* Takes up most of the screen width */
+  max-height: 50%; /* And most of the screen height */
   box-shadow: 0 0 10px #fff; /* Optional: adds a shadow to make it pop out */
   cursor: pointer; /* Change cursor to indicate it can be closed */
 }
