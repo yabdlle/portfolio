@@ -457,13 +457,17 @@ section {
 }
 
 /* Card Styling */
+/* Card Styling */
 .project-card {
-  max-width: 1200px;
-  background-color: #0A0A0A; /* Darker background color for the cards */
-  border-radius: 8px; /* Rounded corners */
-  overflow: hidden; /* Ensures that content doesn't overflow the card */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
-  transition: transform 0.3s ease-in-out; /* Smooth scaling effect on hover */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures that the GitHub link stays at the bottom */
+  height: 100%; /* Make the card take full height */
+  background-color: #0A0A0A;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), inset 0 0 5px rgba(0, 0, 0, 0.2); /* Added inset shadow */
+  transition: transform 0.3s ease-in-out;
 }
 
 .project-card:hover {
@@ -484,6 +488,10 @@ section {
 }
 
 .project-title {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  
   font-size: 24px; /* Title font size */
   font-weight: bold;
   text-align: center; /* Center the title text */
@@ -504,6 +512,7 @@ section {
   display: flex; /* Flexbox to arrange buttons */
   flex-wrap: wrap; /* Allow buttons to wrap onto the next line */
   justify-content: center; /* Center the buttons horizontally */
+  align-items: center; /* Vertically center buttons */
   gap: 0.5rem; /* Space between buttons */
 }
 
@@ -516,13 +525,14 @@ section {
   font-size: 14px; /* Smaller font size for buttons */
   display: inline-block; /* Ensure buttons display inline */
   border: 2px solid #0080FF; /* Border color matching the button background */
-  transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition for background and border color */
+  transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease; /* Consistent transition for hover effect */
 }
 
 .language-buttons .language-button:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* Consistent hover effect */
+  background-color: #0080FF; /* Optional: change background on hover */
+  color: white; /* Optional: change text color on hover */
 }
-
 
 /* GitHub Link */
 .github-link {
@@ -571,7 +581,7 @@ section {
   
   .project-title {
     color: #0080FF;
-    font-size: 1.25rem; /* Smaller font size for mobile */
+    font-size: 2rem; /* Smaller font size for mobile */
   }
 
   .project-description, .project-languages {
