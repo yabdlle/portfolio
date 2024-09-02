@@ -111,7 +111,7 @@ sr.reveal(".skills-data", { interval: 100 });
 // sr.reveal(".skills-img", { delay: 600 });
 
 /*SCROLL projects*/
-sr.reveal(".project-img", { interval: 400 });
+sr.reveal(".project-card", { interval: 200 });
 
 document.addEventListener('DOMContentLoaded', () => {
   const navCircles = document.querySelectorAll('.nav-circle');

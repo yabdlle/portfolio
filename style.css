@@ -470,11 +470,7 @@ section {
   transform-origin: center center; /* Adjust the scaling origin if needed */
 }
 
-/* Scale effect on hover */
-.project-card:hover {
-  transform: scale(1.05); /* Increase scale for a more pronounced hover effect */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5), inset 0 0 8px rgba(255, 255, 255, 0.2); /* Enhanced shadow for hover effect */
-}
+
 
 /* Project Image */
 .project-image {
@@ -485,10 +481,6 @@ section {
   transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
 }
 
-/* Make sure the image scaling does not interfere with the card scaling */
-.project-image:hover {
-  transform: none; /* Avoid scaling image separately if the card is already scaled */
-}
 
 
 
