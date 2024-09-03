@@ -91,6 +91,7 @@ const sr = ScrollReveal({
   distance: "80px",
   duration: 1000,
   reset: false,
+  viewFactor: 0.5  // Adjust this value to trigger animations when the element is more centered on the page
 });
 
 /*SCROLL HOME*/
@@ -99,18 +100,15 @@ sr.reveal(".button", { delay: 200 });
 sr.reveal(".home-img", { delay: 400 });
 sr.reveal(".home-social-icon", { interval: 200 });
 
-/*SCROLL ABOUT*/
 sr.reveal(".about-img", {});
 sr.reveal(".about-subtitle", { delay: 400 });
 sr.reveal(".about-text", { delay: 400 });
-/*SCROLL SKILLS*/
+
 sr.reveal(".skills-subtitle", {});
 sr.reveal(".skills-text", {});
 sr.reveal(".skills-data", { interval: 100 });
-// sr.reveal(".skills-img", { delay: 600 });
-
-/*SCROLL projects*/
 sr.reveal(".project-card", { interval: 400 });
+
 
 document.addEventListener('DOMContentLoaded', () => {
   const navCircles = document.querySelectorAll('.nav-circle');
