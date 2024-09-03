@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   });
 });
-
+/*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
   origin: "top",
   distance: "80px",
@@ -99,16 +99,15 @@ sr.reveal(".button", { delay: 200 });
 sr.reveal(".home-img", { delay: 400 });
 sr.reveal(".home-social-icon", { interval: 200 });
 
+/*SCROLL ABOUT*/
 sr.reveal(".about-img", {});
 sr.reveal(".about-subtitle", { delay: 400 });
-sr.reveal(".about-text", { delay: 200 });
-
+sr.reveal(".about-text", { delay: 400 });
+/*SCROLL SKILLS*/
 sr.reveal(".skills-subtitle", {});
 sr.reveal(".skills-text", {});
 sr.reveal(".skills-data", { interval: 100 });
-sr.reveal(".project-card", { interval: 200 });
-
-
+sr.reveal(".project-card", { interval: 400 });
 
 document.addEventListener('DOMContentLoaded', () => {
   const navCircles = document.querySelectorAll('.nav-circle');
