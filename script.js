@@ -91,7 +91,7 @@ const sr = ScrollReveal({
   distance: "80px",
   duration: 1000,
   reset: false,
-  viewFactor: 0.5  // Trigger the animation when 50% of the element is in the viewport
+  viewFactor: 1  // Trigger the animation when 50% of the element is in the viewport
 });
 
 /*SCROLL HOME*/
