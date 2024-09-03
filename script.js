@@ -103,7 +103,6 @@ sr.reveal(".home-social-icon", { interval: 200 });
 sr.reveal(".about-img", {});
 sr.reveal(".about-subtitle", { delay: 400 });
 sr.reveal(".about-text", { delay: 400 });
-
 /*SCROLL SKILLS*/
 sr.reveal(".skills-subtitle", {});
 sr.reveal(".skills-text", {});
@@ -111,7 +110,7 @@ sr.reveal(".skills-data", { interval: 100 });
 // sr.reveal(".skills-img", { delay: 600 });
 
 /*SCROLL projects*/
-sr.reveal(".project-card", { interval: 200 });
+sr.reveal(".project-card", { interval: 400 });
 
 document.addEventListener('DOMContentLoaded', () => {
   const navCircles = document.querySelectorAll('.nav-circle');
