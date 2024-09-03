@@ -101,8 +101,8 @@ sr.reveal(".home-social-icon", { interval: 200 });
 
 /*SCROLL ABOUT*/
 sr.reveal(".about-img", {});
-sr.reveal(".about-subtitle", { delay: 400 });
-sr.reveal(".about-text", { delay: 400 });
+sr.reveal(".about-subtitle", { delay: 300 });
+sr.reveal(".about-text", { delay: 300 });
 /*SCROLL SKILLS*/
 sr.reveal(".skills-subtitle", {});
 sr.reveal(".skills-text", {});
