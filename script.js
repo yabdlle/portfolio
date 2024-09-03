@@ -101,12 +101,12 @@ sr.reveal(".home-social-icon", { interval: 200 });
 
 sr.reveal(".about-img", {});
 sr.reveal(".about-subtitle", { delay: 400 });
-sr.reveal(".about-text", { delay: 400 });
+sr.reveal(".about-text", { delay: 200 });
 
 sr.reveal(".skills-subtitle", {});
 sr.reveal(".skills-text", {});
 sr.reveal(".skills-data", { interval: 100 });
-sr.reveal(".project-card", { interval: 400 });
+sr.reveal(".project-card", { interval: 200 });
 
 
 
