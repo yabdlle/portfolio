@@ -523,7 +523,7 @@ section {
   background-color: #0A0A0A; /* Button background color */
   color: #0080FF; /* Button text color */
   padding: 0.25rem 0.75rem; /* Padding for buttons */
-  border-radius: 14px; /* Increased rounded corners */
+  border-radius: 12px; /* Increased rounded corners */
   text-decoration: none; /* Remove underline from links */
   font-size: 14px; /* Smaller font size for buttons */
   display: inline-block; /* Ensure buttons display inline */
