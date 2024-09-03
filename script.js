@@ -85,13 +85,13 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   });
 });
-/*===== SCROLL REVEAL ANIMATION =====*/
+
 const sr = ScrollReveal({
   origin: "top",
   distance: "80px",
   duration: 1000,
   reset: false,
-  viewFactor: 0.5  // Adjust this value to trigger animations when the element is more centered on the page
+  viewFactor: 0.5  // Trigger the animation when 50% of the element is in the viewport
 });
 
 /*SCROLL HOME*/
@@ -108,6 +108,7 @@ sr.reveal(".skills-subtitle", {});
 sr.reveal(".skills-text", {});
 sr.reveal(".skills-data", { interval: 100 });
 sr.reveal(".project-card", { interval: 400 });
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
