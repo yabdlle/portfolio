@@ -462,7 +462,7 @@ section {
   justify-content: space-between;
   height: 100%;
   background-color: #0A0A0A;
-  border-radius: 8px;
+  border-radius: 12px;
   max-width: 1200px;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 128, 255, 0.4);
@@ -481,7 +481,9 @@ section {
   transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
 }
 
-
+.project-card:hover .project-image {
+  transform: scale(1.05); /* Scale up the image by 10% */
+}
 
 /* Project Info */
 .project-info {
