@@ -107,7 +107,7 @@ sr.reveal(".about-text", { delay: 400 });
 sr.reveal(".skills-subtitle", {});
 sr.reveal(".skills-text", {});
 sr.reveal(".skills-data", { interval: 100 });
-sr.reveal(".project-card", { interval: 400 });
+sr.reveal(".project-card", { interval: 200 });
 
 document.addEventListener('DOMContentLoaded', () => {
   const navCircles = document.querySelectorAll('.nav-circle');
