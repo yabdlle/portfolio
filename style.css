@@ -482,7 +482,7 @@ section {
 }
 
 .project-card:hover .project-image {
-  transform: scale(1.05); /* Scale up the image by 10% */
+  transform: scale(1.2); /* Scale up the image by 10% */
 }
 
 /* Project Info */
