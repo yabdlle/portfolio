@@ -101,12 +101,16 @@ sr.reveal(".home-social-icon", { interval: 200 });
 
 /*SCROLL ABOUT*/
 sr.reveal(".about-img", {});
-sr.reveal(".about-subtitle", { delay: 300 });
-sr.reveal(".about-text", { delay: 300 });
+sr.reveal(".about-subtitle", { delay: 400 });
+sr.reveal(".about-text", { delay: 400 });
+
 /*SCROLL SKILLS*/
 sr.reveal(".skills-subtitle", {});
 sr.reveal(".skills-text", {});
 sr.reveal(".skills-data", { interval: 100 });
+
+
+/*SCROLL projects*/
 sr.reveal(".project-card", { interval: 200 });
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -126,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function updateActiveClass() {
     let currentSection = '';
 
-    // Determine the currently visible section
+
     sections.forEach(section => {
       const sectionTop = getOffset(section);
       const sectionHeight = section.clientHeight;
@@ -136,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Update the navigation links
+
     navLinks.forEach(link => {
       link.classList.remove('active');
       if (link.getAttribute('href').includes(currentSection)) {
@@ -144,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Update the navigation circles
+
     navCircles.forEach(circle => {
       circle.classList.remove('active');
       if (circle.getAttribute('href').includes(currentSection)) {
@@ -156,10 +160,10 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', updateActiveClass);
 });
 function enlargeImage(img) {
-  // Create a clone of the image to be shown in fullscreen
+
   var clone = img.cloneNode();
   clone.classList.add("fullscreen-image"); // Add the class for styling
-  clone.onclick = closeImage; // Set the onclick event to close the image
+  clone.onclick = closeImage; 
 
   // Get the overlay div and append the cloned image
   var overlay = document.getElementById("image-overlay");
