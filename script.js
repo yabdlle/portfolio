@@ -178,11 +178,5 @@ function enlargeImage(img) {
 function closeImage() {
   document.getElementById("image-overlay").style.display = "none";
 }
-function downloadResume() {
-  const link = document.createElement('a');
-  link.href = 'assets/Youssef_Abdulle_2026.pdf';  
-  link.download = 'Youssef_Abdulle_2026.pdf';      
-  link.click();
-}
 
 
