@@ -144,7 +144,6 @@ a:hover {
 }
 
 .nav-circle.active::after {
-  content: '';
   position: absolute;
   top: -5px; 
   left: -5px; 
