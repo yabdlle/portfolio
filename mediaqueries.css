@@ -119,4 +119,39 @@
     padding-bottom: 2rem;
   }
 }
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtext {
+    font-size: 1rem; 
+  }
+
+  .project-container {
+    grid-template-columns: 1fr; 
+  }
+
+  .project-img {
+    height: auto; /* Allow cards to grow with content */
+  }
+  
+  .project-title {
+    color: #0080FF;
+    font-size: 2rem; /* Smaller font size for mobile */
+  }
+
+  .project-description, .project-languages {
+    font-size: 0.9rem; /* Smaller font size for mobile */
+    margin: 0 0.5rem; /* Less margin for mobile */
+  }
+
+  .github-link {
+    font-size: 1rem; /* Smaller font size for mobile */
+  }
+
+  .github-link i {
+    font-size: 1.2rem; /* Smaller icon size for mobile */
+  }
+}
 }

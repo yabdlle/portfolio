@@ -124,7 +124,7 @@ a:hover {
   width: 20px;
   height: 20px;
   margin-bottom: 10px;
-  background-color: #ccc; /* Light grey color, change as needed */
+  background-color: #ccc; 
   border-radius: 50%;
   transition: background-color 0.3s;
   outline: none;
@@ -146,18 +146,18 @@ a:hover {
 .nav-circle.active::after {
   content: '';
   position: absolute;
-  top: -5px; /* Adjust as needed */
-  left: -5px; /* Adjust as needed */
-  width: 30px; /* Adjust to match the new size with the border */
-  height: 30px; /* Adjust to match the new size with the border */
-  border: 2px solid #2fcff4; /* Border color */
+  top: -5px; 
+  left: -5px; 
+  width: 30px; 
+  height: 30px; 
+  border: 2px solid #2fcff4; 
   border-radius: 50%;
   box-sizing: border-box; /* To include the border in the width and height */
   z-index: -1;
 }
 
 section {
-  padding-top: 4vh; /* Adjust this as needed */
+  padding-top: 4vh; 
   padding-bottom: 4vh; /* Added for bottom padding */
   margin: 0 10%;
   box-sizing: border-box;
@@ -189,7 +189,7 @@ section {
 .section__text {
   align-self: center;
   text-align: center;
-  position: relative;           /* Make it possible to position elements relative to .section__text */
+  position: relative;           
 }
 
 .section__text p {
@@ -213,14 +213,14 @@ section {
 
 .main_grid {
   display: flex;
-  flex-direction: column;   /* Stack photo and icons vertically */
-  align-items: center;      /* Center items horizontally */
-  text-align: center;       /* Center text (if needed) */
+  flex-direction: column;   
+  align-items: center;      
+  text-align: center;      
 }
 
 .main_img {
   display: flex;
-  justify-content: center;  /* Center the photo horizontally */
+  justify-content: center;  
 }
 
 .main_img img {
@@ -228,16 +228,16 @@ section {
   height: auto;     /* Maintain aspect ratio */
 }
 .main_img img {
-  margin-top: 50px; /* Increase the top margin for more space */
-  width: 250px; /* Increase the width for a larger circle */
-  height: 250px; /* Increase the height to match width */
+  margin-top: 50px; 
+  width: 250px; 
+  height: 250px; 
   border-radius: 50%; /* Make the image a circle */
-  object-fit: cover; /* Ensure the image covers the entire area */
+  object-fit: cover; 
   cursor: pointer;
   overflow: hidden;
-  max-width: 375px; /* Limit the maximum size */
-  border: 3px solid #0A0A0A; /* Color and size of border set to black */
-  margin-bottom: 100px; /* Space between the image and other elements */
+  max-width: 375px; 
+  border: 3px solid #0A0A0A; 
+  margin-bottom: 100px; 
   animation: bounce 3.5s infinite alternate ease-in-out; /* Animation */
   transition: transform 1s ease; /* Smooth transition for transformation */
 }
@@ -287,23 +287,21 @@ section {
   border: gray 0.1rem solid; /* Match border style */
   font-weight: 600;
   transition: all 300ms ease;
-  padding: 1rem; /* Adjusted padding */
-  width: 8rem; /* Increased width */
+  padding: 1rem;
+  width: 8rem; 
   border-radius: 2rem; /* More rounded corners */
-  color: white; /* Text color */
-  font-size: 14px; /* Font size */
-  text-align: center; /* Center align text */
+  color: white; 
+  font-size: 14px; 
+  text-align: center; 
   display: inline-block; /* Ensure it respects padding and width */
   cursor: pointer; /* Pointer cursor on hover */
 }
 
 .logo-btn:hover {
-  background: rgb(0, 0, 0); /* Match hover background */
-  color: #0080FF; /* Match hover color */
-  transform: translateY(-5px); /* Match hover transform */
+  background: rgb(0, 0, 0);
+  color: #0080FF; 
+  transform: translateY(-5px); 
 }
-
-
 
 
 .about-text {
@@ -313,11 +311,11 @@ section {
 
 
 .about2-text {
-  font-size: 1.5rem; /* Adjust font size */
-  font-weight: bold; /* Make text bold */
-  color: #0080FF; /* Blue color for the header */
-  text-align: center; /* Center align the text */
-  margin-bottom: 0.5rem; /* Space below the header */
+  font-size: 1.5rem; 
+  font-weight: bold; 
+  color: #0080FF; 
+  text-align: center; 
+  margin-bottom: 0.5rem; 
 }
 
 
@@ -332,9 +330,9 @@ section {
   padding: 20px;
   max-width: 800px;
   margin: 20px auto;
-  margin-top: -140px; /* Adjust this value to move the card up */
+  margin-top: -140px; 
   text-align: center;
-  box-shadow: 0 0 20px rgba(0, 128, 255, 0.8); /* Balanced shadow */
+  box-shadow: 0 0 20px rgba(0, 128, 255, 0.8); 
 }
 .about-text {
   text-align: center;
@@ -369,10 +367,10 @@ section {
   display: flex;
   flex-wrap: wrap;
   margin-top: 2rem;
-  gap: 20px; /* Adjust spacing between cards */
+  gap: 20px; 
 }
 
-/* Individual Skill Card */
+
 .skills-card {
   margin-bottom: -4rem;
   border: 2px solid white;
@@ -429,12 +427,12 @@ section {
 
 /* Skills Section */
 .skills-section {
-  padding: 4rem 1rem; /* Padding around the Skills section */
-  margin-bottom: 2rem; /* Space below the Skills section to match Projects section margin-top */
+  padding: 4rem 1rem; 
+  margin-bottom: 2rem; 
 }
 .section-title {
   margin-bottom: var(--mb-4); /* Margin bottom */
-  font-size: 42px; /* Larger font size for better visibility */
+  font-size: 42px; 
   text-align: center; /* Center align the section title */
   color: #0080FF;
 }
@@ -467,7 +465,7 @@ section {
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 128, 255, 0.4);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  transform-origin: center center; /* Adjust the scaling origin if needed */
+  transform-origin: center center; 
 }
 
 
@@ -494,49 +492,48 @@ section {
   justify-content: center;
   align-items: center;
   display: flex;
-  font-size: 24px; /* Title font size */
+  font-size: 24px; 
   font-weight: bold;
-  text-align: center; /* Center the title text */
+  text-align: center; 
   margin: 0;
-  color: #0080FF; /* Accent color for titles */
+  color: #0080FF; 
 }
 
 .project-subtitle {
-  margin: 1rem 0; /* Increased margin to create more space above and below the subtitle */
-  text-align: center; /* Center the subtitle text */
-  font-size: 16px; /* Subtitle font size */
-  color: #ccc; /* Lighter color for subtitles */
+  margin: 1rem 0; 
+  text-align: center; 
+  font-size: 16px; 
+  color: #ccc; 
 }
 
 /* Language Buttons */
 .language-buttons {
-  margin: 1rem 0; /* Space between subtitle and buttons */
-  display: flex; /* Flexbox to arrange buttons */
-  flex-wrap: wrap; /* Allow buttons to wrap onto the next line */
-  justify-content: center; /* Center the buttons horizontally */
-  align-items: center; /* Vertically center buttons */
-  gap: 0.5rem; /* Space between buttons */
+  margin: 1rem 0; 
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  align-items: center;
+  gap: 0.5rem; 
   pointer-events: none;
-  
   
 }
 
 .language-buttons .language-button {
-  background-color: #0A0A0A; /* Button background color */
-  color: #0080FF; /* Button text color */
-  padding: 0.25rem 0.75rem; /* Padding for buttons */
-  border-radius: 12px; /* Increased rounded corners */
-  text-decoration: none; /* Remove underline from links */
-  font-size: 14px; /* Smaller font size for buttons */
-  display: inline-block; /* Ensure buttons display inline */
-  border: 2px solid #0080FF; /* Border color matching the button background */
+  background-color: #0A0A0A; 
+  color: #0080FF;
+  padding: 0.25rem 0.75rem; 
+  border-radius: 12px; 
+  text-decoration: none; 
+  font-size: 14px; 
+  display: inline-block; 
+  border: 2px solid #0080FF;
   transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease; /* Consistent transition for hover effect */
 }
 
 .language-buttons .language-button:hover {
-  transform: scale(1.05); /* Consistent hover effect */
-  background-color: #0080FF; /* Optional: change background on hover */
-  color: white; /* Optional: change text color on hover */
+  transform: scale(1.05); 
+  background-color: #0080FF; 
+  color: white; 
 }
 
 /* GitHub Link */
@@ -544,84 +541,48 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1rem; /* Increased margin to create more space above the GitHub link */
+  margin-top: 1rem;
   text-decoration: none;
-  color: #0080FF; /* Default color for GitHub link */
-  font-size: 20.8px; /* Font size for GitHub link */
-  background-color: #0A0A0A; /* Background color to match the dark theme */
-  border: 2px solid #0080FF; /* Blue border color */
-  border-radius: 4px; /* Rounded corners for the border */
-  padding: 0.5rem 1rem; /* Padding inside the link */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition effects */
+  color: #0080FF; 
+  font-size: 20.8px; /
+  background-color: #0A0A0A; 
+  border: 2px solid #0080FF; 
+  border-radius: 4px; 
+  padding: 0.5rem 1rem; 
+  transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
 .github-link:hover {
-  background-color: #0080FF; /* Blue background color on hover */
-  color: white; /* Ensure text color remains white on hover */
-  border-color: #0080FF; /* Ensure border color matches the background on hover */
+  background-color: #0080FF; 
+  color: white; 
+  border-color: #0080FF; /
 }
 
 .github-link i {
-  margin-right: 0.5rem; /* Add space after the GitHub icon */
+  margin-right: 0.5rem; 
 }
 
 /* Style for full-screen overlay */
 #image-overlay {
-  position: fixed; /* Fixed position to cover the whole screen */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
-  display: flex; /* Flex to center the image */
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally */
-  z-index: 1000; /* High z-index to be on top of other content */
+  background: rgba(0, 0, 0, 0.8); 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  z-index: 1000;
 }
 
-/* Class to be added to the image for full-screen view */
+
 .fullscreen-image {
   border-radius: 12px;
   object-fit: contain;
-  max-width: 50%; /* Takes up most of the screen width */
-  max-height: 50%; /* And most of the screen height */
-  cursor: pointer; /* Change cursor to indicate it can be closed */
-}
-/* Mobile Styles */
-@media (max-width: 768px) {
-  .section-title {
-    font-size: 2rem; /* Smaller font size for mobile */
-  }
-
-  .section-subtext {
-    font-size: 1rem; /* Smaller font size for mobile */
-  }
-
-  .project-container {
-    grid-template-columns: 1fr; /* Single column layout on mobile */
-  }
-
-  .project-img {
-    height: auto; /* Allow cards to grow with content */
-  }
-  
-  .project-title {
-    color: #0080FF;
-    font-size: 2rem; /* Smaller font size for mobile */
-  }
-
-  .project-description, .project-languages {
-    font-size: 0.9rem; /* Smaller font size for mobile */
-    margin: 0 0.5rem; /* Less margin for mobile */
-  }
-
-  .github-link {
-    font-size: 1rem; /* Smaller font size for mobile */
-  }
-
-  .github-link i {
-    font-size: 1.2rem; /* Smaller icon size for mobile */
-  }
+  max-width: 50%; 
+  max-height: 50%; 
+  cursor: pointer; 
 }
 
 
@@ -652,7 +613,7 @@ section {
 }
 
 .contact-container {
-  max-width: 800px; /* Increased maximum width */
+  max-width: 800px; 
   margin: 0 auto;
   text-align: center;
 }
@@ -668,21 +629,21 @@ section {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background: #0A0A0A; /* Jett black background */
-  padding: 40px; /* Increased padding */
-  border-radius: 12px; /* More rounded corners */
-  box-shadow: 0 0 30px rgba(0, 128, 255, 0.8); /* Larger shadow for prominence */
-  margin: 0 auto; /* Center the form */
+  background: #0A0A0A;
+  padding: 40px; 
+  border-radius: 12px; 
+  box-shadow: 0 0 30px rgba(0, 128, 255, 0.8); 
+  margin: 0 auto; 
 }
 
 .form-container {
-  width: 100%; /* Ensure the form container takes full width */
-  margin-bottom: 20px; /* Space between fields */
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .form-container label {
   display: block;
-  margin-bottom: 10px; /* Increased margin for labels */
+  margin-bottom: 10px;
   font-weight: bold;
   color: #0080FF;
 }
@@ -690,10 +651,10 @@ section {
 .form-container input,
 .form-container textarea {
   width: 100%;
-  padding: 15px; /* Increased padding for fields */
+  padding: 15px; 
   border: 1px solid #333;
-  border-radius: 6px; /* More rounded corners for fields */
-  font-size: 1.1em; /* Slightly larger font size */
+  border-radius: 6px; 
+  font-size: 1.1em; 
   background: #0A0A0A;
   color: #fff;
   transition: border-color 0.3s ease-in-out;
@@ -706,26 +667,26 @@ section {
 }
 
 .submit-btn {
-  width: 100%; /* Full width to match the message box */
-  padding: 14px 24px; /* Adjusted padding for a more balanced look */
-  border: none; /* Remove default border */
-  border-radius: 50%; /* Fully rounded corners for a pill-shaped button */
-  background-color: #0080FF; /* Button color */
-  color: white; /* Text color */
-  font-size: 1.2rem; /* Adjust font size */
-  cursor: pointer; /* Change cursor on hover */
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition on hover */
-  text-align: center; /* Center text */
-  display: inline-flex; /* Align text within button */
-  align-items: center; /* Center text vertically */
-  justify-content: center; /* Center text horizontally */
-  box-shadow: 0 4px 10px rgba(0, 128, 255, 0.2); /* Subtle shadow for depth */
+  width: 100%; 
+  padding: 14px 24px;
+  border: none;
+  border-radius: 50%; 
+  background-color: #0080FF; 
+  color: white; 
+  font-size: 1.2rem; 
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+  text-align: center; 
+  display: inline-flex; 
+  align-items: center; 
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 128, 255, 0.2); 
 }
 
 .submit-btn:hover {
-  background-color: #005bb5; /* Darker color on hover */
-  transform: scale(1.07); /* Slightly enlarge button on hover for emphasis */
-  box-shadow: 0 6px 15px rgba(0, 91, 181, 0.3); /* Enhance shadow on hover */
+  background-color: #005bb5; 
+  transform: scale(1.07); 
+  box-shadow: 0 6px 15px rgba(0, 91, 181, 0.3);
 }
 
 
@@ -733,7 +694,7 @@ section {
 .sections-wrapper {
   display: flex;
   flex-direction: column;
-  gap: var(--mb-4); /* Gap between sections */
+  gap: var(--mb-4); 
 }
 
 .contact-container {
@@ -742,27 +703,27 @@ section {
 
 .contact-section h2 {
   position: relative;
-  top: -20px; /* Adjust this value to move the heading up */
-  margin-bottom: 20px; /* Adjust as needed */
+  top: -20px; 
+  margin-bottom: 20px; 
 }
 
 /* Form label and input styling */
 .form-label {
   display: block;
-  margin-bottom: 10px; /* Increased margin */
+  margin-bottom: 10px; 
   font-weight: bold;
   color: #333;
 }
 
 .form-input, .form-textarea {
   width: 100%;
-  padding: 15px; /* Increased padding */
-  border-radius: 6px; /* More rounded corners */
+  padding: 15px;
+  border-radius: 6px;
   border: 1px solid #ddd;
 }
 
 .submit-btn {
-  background-color: #0080FF; /* Button color */
+  background-color: #0080FF;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -771,23 +732,23 @@ section {
   font-size: 1rem;
 }
 .submit-btn:hover {
-  background-color: #005bb5; /* Darker color on hover */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow effect */
-  transform: translateY(-2px); /* Slight lift effect */
+  background-color: #005bb5; 
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); 
+  transform: translateY(-2px); 
 }
 
 /* Active effect */
 .submit-btn:active {
-  background-color: #004a99; /* Even darker color when clicked */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Reduce shadow on click */
-  transform: translateY(1px); /* Slightly lower effect when clicked */
+  background-color: #004a99; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transform: translateY(1px);
 }
 
 .footer-class {
-  background-color: #0062CC; /* Updated background color */
-  color: white; /* Keep the text color */
-  padding: 20px 30px; /* Adjust padding as needed */
-  text-align: center; /* Center the text and icons */
+  background-color: #0062CC; 
+  color: white; 
+  padding: 20px 30px; 
+  text-align: center; 
   width: 100%;
 }
 
@@ -795,86 +756,84 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 10px; /* Reduced space between content and bottom section */
+  margin-bottom: 10px; 
 }
 
 .footer-title {
-  font-size: 20px; /* Revert to original font size */
-  font-weight: bold; /* Keep the text bold */
-  color: white; /* Dark text color for contrast */
-  margin-bottom: 10px; /* Reduced space below the title */
-  text-transform: uppercase; /* Keep uppercase text */
-  letter-spacing: 1px; /* Keep letter spacing */
-  font-family: "Poppins", sans-serif; /* Consistent with other font choices */
+  font-size: 20px; 
+  font-weight: bold;
+  color: white; 
+  margin-bottom: 10px; 
+  text-transform: uppercase; 
+  letter-spacing: 1px; 
+  font-family: "Poppins", sans-serif; 
 }
 
 .footer-nav {
-  margin-bottom: 12px; /* Reduced space between navigation and social icons */
+  margin-bottom: 12px; 
 }
 
 .footer-nav ul {
-  list-style: none; /* Remove bullets from list */
+  list-style: none; 
   padding: 0;
 }
 
 .footer-nav ul li {
-  display: inline; /* Keep items inline */
-  margin: 0 8px; /* Reduced space between items */
+  display: inline;
+  margin: 0 8px; 
 }
 
 .footer-nav ul li a {
-  color: white; /* Dark text color for links */
-  text-decoration: none; /* Remove underline from links */
-  font-size: 19.2px; /* Revert to original font size for links */
+  color: white; 
+  text-decoration: none; 
+  font-size: 19.2px; 
 }
 
 .footer-nav ul li a:hover {
-  text-decoration: underline; /* Add underline on hover */
+  text-decoration: underline; 
 }
 
 .footer-social {
-  margin-bottom: 15px; /* Reduced space between social icons and footer bottom */
+  margin-bottom: 15px; 
 }
 
 .footer-icon {
-  color: white; /* Keep icon color white */
-  font-size: 24px; /* Revert to original icon size */
-  margin: 0 8px; /* Reduced space between icons */
-  text-decoration: none; /* Remove underline from links */
+  color: white; 
+  font-size: 24px; 
+  margin: 0 8px; 
+  text-decoration: none;
 }
 
 .footer-icon:hover {
-  opacity: 0.8; /* Keep hover effect */
+  opacity: 0.8; 
 }
 
 .footer-bottom {
-  font-size: 14px; /* Revert to original font size */
-  color: white; /* Keep text color white */
+  font-size: 14px; 
+  color: white; 
 }
-
 
 
 #copy-email-icon {
   cursor: pointer;
-  font-size: 1.2rem; /* Adjust size as needed */
-  color: #0080FF; /* Example color */
+  font-size: 1.2rem; 
+  color: #0080FF; /
   margin-left: 10px;
 }
 
 #copied {
-  display: none; /* Hidden by default */
-  color: white;/* Example color for copied message */
+  display: none; 
+  color: white;
   font-weight: bold;
   margin-left: 10px;
 }
 
 #copied.active {
-  display: inline; /* Show when active */
+  display: inline; 
 }
 
-/* Highlight email on hover */
+
 .highlight-email {
-  background-color: #0A0A0A; /* Example highlight color */
-  transition: background-color 0.3s ease;
+  background-color: #0A0A0A;
 }
 
