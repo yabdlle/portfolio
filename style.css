@@ -689,9 +689,12 @@ section {
 }
 
 .submit-btn:hover {
-  background-color: #005bb5; 
-  transform: scale(1.07); 
-  box-shadow: 0 6px 15px rgba(0, 91, 181, 0.3);
+  background-color: #0080FF;
+  color: white;
+  border-color: #0080FF;
+  transform: scale(1.05); /* Slightly increase size on hover */
+  box-shadow: 0 8px 20px rgba(0, 128, 255, 0.6); /* Add shadow effect */
+  border-radius: 8px; /* Smoothly increase border-radius */
 }
 
 
