@@ -536,30 +536,35 @@ section {
 }
 
 /* GitHub Link */
+/* GitHub Link */
 .github-link {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
   text-decoration: none;
-  color: #0080FF; 
-  font-size: 20.8px; /
-  background-color: #0A0A0A; 
-  border: 2px solid #0080FF; 
-  border-radius: 4px; 
-  padding: 0.5rem 1rem; 
-  transition: background-color 0.3s ease, color 0.3s ease; 
+  color: #0080FF;
+  font-size: 20.8px;
+  background-color: #0A0A0A;
+  border: 2px solid #0080FF;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .github-link:hover {
-  background-color: #0080FF; 
-  color: white; 
-  border-color: #0080FF; /
+  background-color: #0080FF;
+  color: white;
+  border-color: #0080FF;
+  transform: scale(1.05); /* Slightly increase size on hover */
+  box-shadow: 0 8px 20px rgba(0, 128, 255, 0.6); /* Add shadow effect */
+  border-radius: 8px; /* Smoothly increase border-radius */
 }
 
 .github-link i {
-  margin-right: 0.5rem; 
+  margin-right: 0.5rem;
 }
+
 
 /* Style for full-screen overlay */
 #image-overlay {
