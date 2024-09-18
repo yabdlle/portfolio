@@ -36,7 +36,42 @@ a, .btn {
 
 .logo {
   font-size: 1.25rem;
-  font-size: 1.25rem;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a {
+  color: #fff; /* White for default state */
+  margin-right: 20px;
+  font-size: 28px; /* Larger icon size for aesthetics */
+  padding: 10px; /* Add padding for rounded effect */
+  border-radius: 50%; /* Circular icons */
+  background-color: #333; /* Icon background color */
+  transition: color 0.3s, transform 0.3s, background-color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #0080FF; /* Theme color on hover */
+  background-color: #222; /* Darker hover background */
+  transform: scale(1.2); /* Slight scaling effect on hover */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #0080FF;
+  color: #ffffff; /* Invert colors on hover for a better experience */
 }
 
 /* Navi bars and links */
@@ -58,17 +93,6 @@ nav {
   list-style: none;
 }
 
-/* Link Behavior */
-a {
-  color: white;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #0080FF;
-  text-decoration: none;
-  transform: translateY(-2px);
-}
 
 .logo:hover {
   cursor: default;
@@ -163,7 +187,6 @@ section {
   box-sizing: border-box;
   min-height: fit-content;
 }
-
 
 .section_container {
   display: flex;
@@ -289,7 +312,7 @@ section {
   font-weight: 600;
   transition: all 300ms ease;
   padding: 1rem;
-  width: 8rem; 
+  width: 12rem; 
   border-radius: 2rem; /* More rounded corners */
   color: white; 
   font-size: 14px; 
