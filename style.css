@@ -227,6 +227,7 @@ section {
   max-width: 100%;  /* Ensure the photo does not exceed container width */
   height: auto;     /* Maintain aspect ratio */
 }
+
 .main_img img {
   margin-top: 50px; 
   width: 250px; 
@@ -452,7 +453,7 @@ section {
   padding: 1rem; /* Padding around the grid container */
 }
 
-/* Card Styling */
+
 /* Card Styling */
 .project-card {
   display: flex;
@@ -537,7 +538,6 @@ section {
 }
 
 /* GitHub Link */
-/* GitHub Link */
 .github-link {
   display: flex;
   justify-content: center;
@@ -589,8 +589,6 @@ section {
   max-height: 50%; 
   cursor: pointer; 
 }
-
-
 
 /* Contact section */
 .contact-section {
@@ -697,8 +695,6 @@ section {
   border-radius: 8px; /* Smoothly increase border-radius */
 }
 
-
-/* Wrapper for all sections */
 .sections-wrapper {
   display: flex;
   flex-direction: column;
@@ -739,10 +735,13 @@ section {
   cursor: pointer;
   font-size: 1rem;
 }
-.submit-btn:hover {
-  background-color: #005bb5; 
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); 
-  transform: translateY(-2px); 
+.submit-btn:hover{
+  background-color: #0080FF;
+  color: white;
+  border-color: #0080FF;
+  transform: scale(1.05); /* Slightly increase size on hover */
+  box-shadow: 0 8px 20px rgba(0, 128, 255, 0.6); /* Add shadow effect */
+  border-radius: 8px; /* Smoothly increase border-radius */
 }
 
 /* Active effect */
