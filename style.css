@@ -581,7 +581,6 @@ section {
   z-index: 1000;
 }
 
-
 .fullscreen-image {
   border-radius: 12px;
   object-fit: contain;
@@ -735,6 +734,7 @@ section {
   cursor: pointer;
   font-size: 1rem;
 }
+
 .submit-btn:hover{
   background-color: #0080FF;
   color: white;

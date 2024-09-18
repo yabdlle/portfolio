@@ -38,6 +38,10 @@
     grid-template-columns: repeat(2, 1fr);
     text-align: initial;
   }
+  .fullscreen-image {
+    max-width: 80%; /* Increase size on mobile */
+    max-height: 80%; /* Increase size on mobile */
+  }
 }
 
 /* Responsive adjustments for tablets */
@@ -153,5 +157,6 @@
   .github-link i {
     font-size: 1.2rem; /* Smaller icon size for mobile */
   }
+  
 }
 }
