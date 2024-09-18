@@ -9,7 +9,6 @@
 }
 
 
-
 html, body {
   margin: 0;
   padding: 0;
@@ -36,7 +35,7 @@ a, .btn {
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 /* Navi bars and links */
