@@ -8,10 +8,7 @@
   box-sizing: border-box;
 }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> a39a50830af0d64e42230d8c4a9e60c906d3ba1e
 html, body {
   margin: 0;
   padding: 0;
@@ -38,6 +35,7 @@ a, .btn {
 }
 
 .logo {
+  font-size: 1.25rem;
   font-size: 1.25rem;
 }
 
