@@ -26,6 +26,19 @@ body {
 p {
   color: white;
 }
+.wave-emoji {
+  display: inline-block;
+  animation: wave 1s infinite; /* Adjust duration as needed */
+}
+
+@keyframes wave {
+  0%, 100% {
+      transform: rotate(0deg);
+  }
+  50% {
+      transform: rotate(20deg);
+  }
+}
 
 /* Transition */
 a, .btn {
@@ -222,6 +235,8 @@ section {
 }
 
 .section__text__p1 {
+
+  font-size: 1.5rem;
   text-align: center;
 }
 
