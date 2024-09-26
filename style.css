@@ -836,15 +836,18 @@ section {
 }
 
 .footer-icon {
-  color: white; 
-  font-size: 24px; 
-  margin: 0 8px; 
+  color: white;
+  font-size: 24px;
+  margin: 0 8px;
   text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease; /* Smooth transition for hover effects */
 }
 
 .footer-icon:hover {
-  opacity: 0.8; 
+  transform: scale(1.1); /* Grows slightly */
+  color: #0080FF; /* Slightly lighter color on hover */
 }
+
 
 .footer-bottom {
   font-size: 14px; 
